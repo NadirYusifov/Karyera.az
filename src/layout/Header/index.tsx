@@ -37,7 +37,7 @@ function Header() {
                   {searchbar ? 
                   <div className=" absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center z-40 h-screen bg-slate-800/50">
                   <div className="absolute top-0 right-0 bottom-0 m-6 text-[30px]">
-                  <button onClick={() => {setSearchBar(prev => !prev); (searchbar:any) => !searchbar}}><IoIosClose/>
+                  <button className="text-white" onClick={() => {setSearchBar(prev => !prev); (searchbar:any) => !searchbar}}><IoIosClose/>
                   </button>  
                   </div> 
                   <div className="place-content-center relative ">
