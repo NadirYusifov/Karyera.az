@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <>
-      <div className="header-section py-4 font-jakarta relative">
+      <div className="header-section py-6 font-jakarta sticky top-0 z-10 bg-white">
         <div className="container">
           <div className="row">
             <div className="flex justify-between flex-wrap">
@@ -16,9 +16,11 @@ function Header() {
                 <h1>Logo</h1>
               </div>
               <nav className="header-nav flex justify-center max-sm:hidden max-md:hidden">
-                <a className="px-2">Ana səhifə</a>
-                <a className="px-2">Mentorlar</a>
+                <a className="px-2">Əsas səhifə</a>
+                <a className="px-2">Karyera testi</a>
                 <a className="px-2">İxtisaslar</a>
+                <a className="px-2">Mentorlar</a>
+                <a className="px-2">Blog</a>
                 <a className="px-2">Haqqımızda</a>
               </nav>
               <div className="header-right flex items-center gap-3">
@@ -36,7 +38,7 @@ function Header() {
         </div>
                   {searchbar ? 
                   <div className=" absolute top-0 bottom-0 right-0 left-0 flex justify-center items-center z-40 h-screen bg-slate-800/50">
-                  <div className="absolute top-0 right-0 bottom-0 m-6 text-[30px]">
+                  <div className="absolute top-12 right-6 bottom-0 text-[40px]">
                   <button className="text-white" onClick={() => {setSearchBar(prev => !prev); (searchbar:any) => !searchbar}}><IoIosClose/>
                   </button>  
                   </div> 

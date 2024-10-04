@@ -3,7 +3,7 @@ import Header from "./layout/Header"
 import Home from "./page/Home/HeroSection"
 import Mentors from "./page/Home/Mentors"
 import Qualficitaions from "./page/Home/Qualifications"
-import Support from "./page/Home/Support"
+// import Support from "./page/Home/Support"
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
     <Header/>
     <Home/>
     <Qualficitaions/>
-    <Support/>
+    {/* <Support/> */}
     <Mentors/>
     <Footer/>
     </>

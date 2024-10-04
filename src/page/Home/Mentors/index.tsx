@@ -3,6 +3,82 @@ import MentorImg from '/public/bck-img.jpg'
 // import { FiBriefcase } from "react-icons/fi";
 // import { TfiCup } from "react-icons/tfi";
 
+const mentors = [
+  {
+    ad: "Ali Veli",
+    alan: "Frontend Developer",
+    deneyim: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
+    email: "ali.veli@example.com",
+    image: "https://example.com/ali-veli.jpg",
+  },
+  {
+    ad: "Ayşe Yılmaz",
+    alan: "Backend Developer",
+    deneyim: "8 il backend proqramlaşdırma sahəsində təcrübəsi vardır.",
+    email: "ayse.yilmaz@example.com",
+    image: "https://example.com/ayse-yilmaz.jpg",
+  },
+  {
+    ad: "Mehmet Demir",
+    alan: "Full Stack Developer",
+    deneyim: "5 il boyunca həm frontend, həm də backend inkişafında təcrübə qazanmışdır.",
+    email: "mehmet.demir@example.com",
+    image: "https://example.com/mehmet-demir.jpg",
+  },
+  {
+    ad: "Fatma Korkmaz",
+    alan: "Mobile Developer",
+    deneyim: "Mobil tətbiq inkişafında 7 il təcrübəyə malikdir.",
+    email: "fatma.korkmaz@example.com",
+    image: "https://example.com/fatma-korkmaz.jpg",
+  },
+  {
+    ad: "Emre Can",
+    alan: "DevOps Engineer",
+    deneyim: "6 il ərzində DevOps mühitində iş təcrübəsi var.",
+    email: "emre.can@example.com",
+    image: "https://example.com/emre-can.jpg",
+  },
+  {
+    ad: "Zeynep Arslan",
+    alan: "Data Scientist",
+    deneyim: "12 ildən çox məlumat analizi və modeləşdirmə sahəsində təcrübəsi vardır.",
+    email: "zeynep.arslan@example.com",
+    image: "https://example.com/zeynep-arslan.jpg",
+  },
+  {
+    ad: "Ahmet Koç",
+    alan: "Game Developer",
+    deneyim: "9 il oyun inkişafı sahəsində geniş təcrübəyə malikdir.",
+    email: "ahmet.koc@example.com",
+    image: "https://example.com/ahmet-koc.jpg",
+  },
+  {
+    ad: "Elif Çelik",
+    alan: "QA Engineer",
+    deneyim: "4 ildən artıq proqram təminatının test edilməsində təcrübəsi var.",
+    email: "elif.celik@example.com",
+    image: "https://example.com/elif-celik.jpg",
+  },
+  {
+    ad: "Burak Yıldız",
+    alan: "UI/UX Designer",
+    deneyim: "3 il ərzində istifadəçi interfeysi və təcrübəsi dizaynında iş təcrübəsi vardır.",
+    email: "burak.yildiz@example.com",
+    image: "https://example.com/burak-yildiz.jpg",
+  },
+  {
+    ad: "Seda Aydın",
+    alan: "Security Engineer",
+    deneyim: "11 il ərzində proqram təhlükəsizliyi sahəsində təcrübəyə malikdir.",
+    email: "seda.aydin@example.com",
+    image: "https://example.com/seda-aydin.jpg",
+  },
+];
+
+console.log(mentors);
+
+
 function Mentors() {
   return (
     <>
@@ -18,7 +94,7 @@ function Mentors() {
       </div>
       <div className="mt-16 px-8">
         <h1 className="text-lg text-center font-semibold">
-          Cassie 
+           
         </h1>
         <p className="text-sm text-blue-8 text-center">
           Front-End Developer        </p>

@@ -2,12 +2,13 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        "blue-8": "#0090FF"
+        "blue-8": "#0090FF",
+        "ashy-gray": "#8A8A8A"
       },
       container: {
         center: true,
