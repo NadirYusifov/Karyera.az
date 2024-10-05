@@ -18,7 +18,6 @@ function Home() {
     <>
       <div className="hero-section mt-10">
         <div className="container">
-          
             <div className='hero-section-wrapper'>
               <div className='hero-section-wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center items-center'>
                 <div className='hero-content-text font-jakarta'>

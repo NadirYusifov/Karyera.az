@@ -1,29 +1,28 @@
-import SupportImg from '/public/Support.svg'
+import ContactImg from '/public/Contact.svg'
 
 function Support() {
   return (
     <>
-    <div className="support-section mt-[130px]">
+    <div className="support-section mt-[130px] mb-[110px]">
     <div className="container">
-     <div className='support-section-wrapper'>
-              <div className='support-section-wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center items-center'>
-                <div className='support-content-text font-jakarta'>
-                  <h1 className="text-[70px] tracking-thight leading-[77px] font-bold lg:text-[80px]">24/7 Tələbə dəstəyi</h1>
-                  <p className="py-6 text-[20px] font-normal -tracking-tight text-left leading-8 mt-5 mb-7">
-                  Lorem ipsum dolor sit amet consectetur. Sit est lacus blandit elementum amet elit. Varius faucibus sit donec molestie. Vulputate sodales diam et ut erat tempor. Tempor condimentum sodales morbi nunc.
-                  </p>
-                  <div className='btn-wrapper flex'>
-                    <button className="btn place-content-center rounded-lg px-10 py-4 mr-10 hover:bg-blue-500 text-white bg-blue-8 leading-5 font-dmsans">Get Started</button>
-                  </div>
-                </div>
-                <div className='support-content-img'>
+     <div className='support-section-wrapper relative'>
+                <div className='support-content-img relative'>
                   <img
-                    
                     alt="heroimg"
-                    src={SupportImg}
-                    className="rounded-lg max-sm:hidden max-md:hidden" />
+                    src={ContactImg}
+                    className="rounded-lg" />
                 </div>
-              </div>
+
+                <div className='support-header absolute top-0 right-0 left-0 text-center'>
+                  <div className='support-text text-white'>
+                  <h3>Bizimlə əlaqə yarat!</h3>
+                  <p>"Mentor olaraq qeydiyyatdan keçib, biliklərinizi paylaşınb və başqalarının inkişafına dəstək olmaq üçün e-mailinizi qeyd edin!"</p>
+                  </div>
+                  <form className='support-input relative'>
+                    <input className='relative rounded-full pl-5 pr-[105px] py-2 w-3/4 outline-none'/>
+                    <button className='bg-blue-8 text-white top-1 right-[60px] px-5 py-1 rounded-full absolute'>Gönder</button>
+                  </form>
+                </div>
             </div>
         </div>
       </div>

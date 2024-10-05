@@ -1,15 +1,15 @@
 function Footer() {
   return (
     <>
-       <footer className="bg-white">
-  <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
-    <div className="grid grid-cols-1 lg:grid-cols-3">
+       <footer className="bg-gray-800">
+  <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-6 sm:px-6 lg:space-y-8 lg:px-8">
+    <div className="">
       <div>
         <div className="text-blue-8 font-semibold text-[20px]">
           <h3>LOGO</h3>
         </div>
 
-        <p className="mt-4 max-w-xs text-gray-500">
+        <p className="mt-4 text-white">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
           molestias.
         </p>
@@ -20,7 +20,7 @@ function Footer() {
               href="https://www.facebook.com/"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-white transition hover:opacity-75"
             >
               <span className="sr-only">Facebook</span>
 
@@ -39,7 +39,7 @@ function Footer() {
               href="https://www.instagram.com/"
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-white transition hover:opacity-75"
             >
               <span className="sr-only">Instagram</span>
 
@@ -58,7 +58,7 @@ function Footer() {
               href=""
               rel="noreferrer"
               target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
+              className="text-white transition hover:opacity-75"
             >
               <span className="sr-only">Twitter</span>
 
@@ -71,59 +71,9 @@ function Footer() {
           </li>
         </ul>
       </div>
-
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-2">
-        <div>
-          <p className="font-medium text-gray-900">Services</p>
-
-          <ul className="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> Company Review </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
-            </li>
-          </ul>
-        </div>
-
-        
-
-        <div>
-          <p className="font-medium text-gray-900">Helpful Links</p>
-
-          <ul className="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> Contact </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> FAQs </a>
-            </li>
-
-            <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75"> Live Chat </a>
-            </li>
-          </ul>
-        </div>
-
-        
-      </div>
     </div>
 
-    <p className="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+    <p className="text-xs text-gray-400">&copy; 2022. Company Name. All rights reserved.</p>
   </div>
 </footer>
     </>

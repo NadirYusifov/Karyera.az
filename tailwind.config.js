@@ -22,6 +22,9 @@ export default {
       },
       fontFamily :{
         jakarta: ["Plus Jakarta Sans"]
+      },
+      backgroundImage: {
+        "contact-image": "url('/public/contact.svg')"
       }
     },
   },

@@ -84,9 +84,9 @@ function Qualficitaions() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
           nextarrow: (
 
             <button style={{ display: 'none' }}></button>
@@ -113,7 +113,7 @@ function Qualficitaions() {
       <div className='qualific-section-header mt-[130px]'>
         <div className='container'>
           <div className='qualifictions-header-text text-center mb-8'>
-            <h2 className="text-[50px] leading-[70px] font-semibold pb-2">Özünə Uyğun İxtisası Seç</h2>
+            <h2 className="text-blue-8 text-[50px] leading-[70px] font-semibold pb-2">Özünə Uyğun İxtisası Seç</h2>
             <p className="text-[20px] leading-[30px] font-medium text-ashy-gray">Bu günün ixtisasları: texnologiya, kreativlik və analitika!</p>
           </div>
         </div>
@@ -124,11 +124,11 @@ function Qualficitaions() {
             <Slider {...settings}>
               {softwareDevelopers.map(soft => (
                 <div className="px-1">
-                  <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+                  <article className="overflow-hidden p-2 rounded-lg border border-gray-100 bg-white shadow-sm">
                     <img
                       alt="softwareimg"
                       src={soft.image}
-                      className="h-56 w-full object-cover"
+                      className="h-56 w-full object-cover rounded-lg"
                     />
                     <div className="p-4 sm:p-6">
                       <a href="#">
