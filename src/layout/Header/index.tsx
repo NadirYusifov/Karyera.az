@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosClose, IoIosSearch } from "react-icons/io";
 import { FiPhoneCall, FiMail } from "react-icons/fi";
-import BashlaAzImg from "../../../public/Preview.png"
+// import BashlaAzImg from "../../../public/Preview.png"
 
 function Header() {
 
@@ -33,8 +33,9 @@ function Header() {
         <div className="container">
           <div className="row">
             <div className="flex justify-between flex-wrap py-4">
-              <div className="header-logo">
-                <img src={BashlaAzImg}/>
+              <div className="header-logo flex items-center text-[20px] font-bold text-gray-800">
+                {/* <img className="bg-transparent" src={BashlaAzImg}/> */}
+                <h3>Bashla.az</h3>
               </div>
               <nav className="header-nav flex justify-center max-sm:hidden max-md:hidden">
                 <a className="px-2">Əsas səhifə</a>
