@@ -1,17 +1,11 @@
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import NextArrow from "../../../utils/nextarrow";
+import PrevArrow from "../../../utils/prevarrow";
+
 
 function Qualficitaions() {
-
-  // const NextArrow = ({ onClick }: any) => {
-
-  //   return (
-  //     <div className="next-arrow relative" onClick={onClick}>
-  //       <button className="bg-black absolute">➡️</button>
-  //     </div>
-  //   )
-  // }
 
   const softwareDevelopers = [
     {
@@ -67,11 +61,14 @@ function Qualficitaions() {
   ];
 
   var settings = {
+    arrows: true,
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>,
     responsive: [
       {
         breakpoint: 1024,
@@ -84,17 +81,10 @@ function Qualficitaions() {
       {
         breakpoint: 600,
         settings: {
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          nextarrow: (
-
-            <button style={{ display: 'none' }}></button>
-
-          ),
-          prevarrow: (
-            <button style={{ display: 'none' }}></button>
-          )
         }
       },
       {
@@ -118,7 +108,7 @@ function Qualficitaions() {
           </div>
         </div>
       </div>
-      <div className='qualifictions-section-card mx-3'>
+      <div className='qualifictions-section-card relative'>
         <div className='container'>
           <div className='row'>
             <Slider {...settings}>

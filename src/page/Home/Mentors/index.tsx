@@ -131,6 +131,7 @@ const mentors = [
 
 function Mentors() {
   var settings = {
+    arrows: false,
     dots: false,
     infinite: true,
     speed: 500,
@@ -138,14 +139,6 @@ function Mentors() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    nextarrow: (
-
-      <button className="hidden"></button>
-
-    ),
-    prevarrow: (
-      <button style={{ display: 'none' }}></button>
-    ),
     responsive: [
       {
         breakpoint: 1024,

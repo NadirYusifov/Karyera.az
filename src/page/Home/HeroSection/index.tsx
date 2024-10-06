@@ -21,7 +21,7 @@ function Home() {
             <div className='hero-section-wrapper'>
               <div className='hero-section-wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center items-center'>
                 <div className='hero-content-text font-jakarta'>
-                  <h1 className="text-[70px] tracking-thight leading-[94px] font-extrabold sm:text-[50px] lg:text-[70px]"><span className="text-blue-8">Xəyalındakı</span> İşi Tap!</h1>
+                  <h1 className="text-[70px] tracking-thight leading-[94px] font-extrabold max-sm:text-[60px] lg:text-[70px]"><span className="text-blue-8">Xəyalındakı</span> İşi Tap!</h1>
                   <p className="py-6 text-[20px] text-ashy-gray font-medium -tracking-tight text-left leading-8 mt-5 mb-7">
                   Karyera testi ilə bu günün tələb olunan ixtisaslarını kəşf edin, güclü tərəflərinizi üzə çıxarın və iş dünyasında öz yerinizi tapın.
                   </p>

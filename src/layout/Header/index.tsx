@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { IoIosClose, IoIosSearch } from "react-icons/io";
+import { FiPhoneCall, FiMail } from "react-icons/fi";
+import BashlaAzImg from "../../../public/Preview.png"
 
 function Header() {
 
@@ -8,12 +10,31 @@ function Header() {
 
   return (
     <>
-      <div className="header-section py-6 font-jakarta sticky top-0 z-10 bg-white">
+      <div className="header-section font-jakarta sticky top-0 z-10 bg-white">
+            <div className="top-header max-sm:hidden bg-blue-8 py-2">
+              <div className="container">
+                <div className="flex justify-between">
+                <div className="top-header-contact flex gap-20 text-white">
+                  <div className="top-header-phone flex items-center gap-2">
+                <FiPhoneCall/> 
+                <a href="tel:+994 50 123 44 55">+994 50 123 44 55</a>
+                  </div>
+                  <div className="top-header-email flex items-center gap-2">
+                  <FiMail />
+                    <a href="mailto:bashlaz@gmail.com">bashlaz@gmail.com</a>
+                  </div>
+                </div>
+                <div className="top-header-lng">
+                  
+                </div>
+                </div>
+              </div>
+            </div>
         <div className="container">
           <div className="row">
-            <div className="flex justify-between flex-wrap">
+            <div className="flex justify-between flex-wrap py-4">
               <div className="header-logo">
-                <h1>Logo</h1>
+                <img src={BashlaAzImg}/>
               </div>
               <nav className="header-nav flex justify-center max-sm:hidden max-md:hidden">
                 <a className="px-2">Əsas səhifə</a>
@@ -43,7 +64,7 @@ function Header() {
                   </button>  
                   </div> 
                   <div className="place-content-center relative ">
-                    <input className="realtive w-[350px] md:w-[500px]  pr-16 pl-2 py-2 rounded-md outline-none caret-slate-500" placeholder="İxtisaslar, Mentorlar və.s"/> 
+                    <input className="realtive w-[350px] md:w-[500px]  pr-16 pl-2 py-2 rounded-md outline-none caret-slate-200" placeholder="İxtisaslar, Mentorlar və.s"/> 
                     <button className="absolute top-0 bottom-0 right-0 bg-blue-8 text-white px-2 py-1 rounded-e-md">Axtar</button>
                   </div>
                   </div> : <input className="hidden"/> }
