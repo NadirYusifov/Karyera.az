@@ -1,4 +1,4 @@
-import Hero from "./Herosection"
+import Heros from "./Herosection"
 import MentorsCrad from "./Mentors"
 import QualficitaionsCard from "./Qualifications"
 
@@ -6,7 +6,7 @@ import QualficitaionsCard from "./Qualifications"
 function Home() {
   return (
     <>
-    <Hero/>
+    <Heros/>
     <QualficitaionsCard/>
     <MentorsCrad/>
     </>

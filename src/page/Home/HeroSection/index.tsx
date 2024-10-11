@@ -1,8 +1,8 @@
 import HeroImg from "/public/HeroImg.png"
 // import Frame3 from "/public/Frame 3.svg"
 // import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 
 function HeroSection() {
