@@ -2,6 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const mentors = [
   {
@@ -129,7 +130,9 @@ const mentors = [
 ];
 
 
-function Mentors() {
+function MentorsCard() {
+
+
   var settings = {
     arrows: false,
     dots: false,
@@ -171,7 +174,9 @@ function Mentors() {
 
       <div className="mentors-card bg-blue-8 my-[110px]">
         <div className="mentors-card-header text-center pt-7">
-          <h3 className="text-white text-[50px] leading-[70px] font-semibold">Mentorlarla Tanış Ol</h3>
+          <Link to='/mentorlar'>
+            <h3 className="text-white text-[50px] leading-[70px] font-semibold">Mentorlarla Tanış Ol</h3>
+          </Link>
           <p className="text-white text-[20px] leading-[30px] font-medium">Mentorlar, inkişafa gedən yolun açarıdır.</p>
         </div>
         <div className="container">
@@ -215,4 +220,4 @@ function Mentors() {
   )
 }
 
-export default Mentors
+export default MentorsCard

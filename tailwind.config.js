@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         "blue-8": "#0090FF",
-        "ashy-gray": "#8A8A8A"
+        "ashy-gray": "#8A8A8A",
+        "dark-charcoal": "#323232"
       },
       container: {
         center: true,

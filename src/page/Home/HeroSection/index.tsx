@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-function Home() {
+function HeroSection() {
   // var settings = {
   //   dots: true,
   //   infinite: true,
@@ -45,4 +45,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HeroSection

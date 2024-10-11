@@ -5,7 +5,7 @@ import NextArrow from "../../../utils/nextarrow";
 import PrevArrow from "../../../utils/prevarrow";
 
 
-function Qualficitaions() {
+function QualficitaionsCard() {
 
   const softwareDevelopers = [
     {
@@ -67,10 +67,13 @@ function Qualficitaions() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
+          arrows: true,
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
@@ -90,6 +93,7 @@ function Qualficitaions() {
       {
         breakpoint: 480,
         settings: {
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         }
@@ -148,4 +152,4 @@ function Qualficitaions() {
   )
 }
 
-export default Qualficitaions
+export default QualficitaionsCard
