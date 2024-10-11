@@ -1,4 +1,4 @@
-import HeroSection from "./Herosection"
+import HeroSection from "./HeroSection"
 import MentorsCrad from "./Mentors"
 import QualficitaionsCard from "./Qualifications"
 
