@@ -14,7 +14,7 @@ function Footer() {
                 </Link>
               </div>
               <p className="mt-4 text-[16px] font-jakarta font-light leading-[20.16px]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Bəlkə gələcəyə bizimlə Başlayasan?
               </p>
 
               <div className="footer-social">
@@ -99,12 +99,12 @@ function Footer() {
             <div className="footer-contact font-jakarta">
               <h3 className="font-normal pb-3 text-[16px] leading-[20.16px]">Əlaqə</h3>
               <ul className="space-y-2 font-light">
-                <li><a className="flex items-center gap-2" href="tel:+994501234555"><FiPhoneCall />+994 50 123 45 55</a></li>
-                <li><a className="flex items-center gap-2" href="mailto:bashlaz@gmail.com"><FiMail />bashlaz@gmail.com</a></li>
+                <li><a className="inline-flex items-center gap-2" href="tel:+994501234555"><FiPhoneCall />+994 50 123 45 55</a></li>
+                <li><a className="inline-flex items-center gap-2" href="mailto:bashlaz@gmail.com"><FiMail />bashlaz@gmail.com</a></li>
               </ul>
             </div>
           </div>
-          <p className="text-xs text-gray-400">&copy; 2022. Company Name. All rights reserved.</p>
+          <p className="text-xs text-gray-400">&copy; 2024. <span className="text-blue-8">Bashla.az</span>. All rights reserved.</p>
 
         </div>
       </footer>

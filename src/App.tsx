@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+import LoadingSpinner from "./Components/Loading"
 import ContactMe from "./layout/Contactme"
 import Footer from "./layout/Footer"
 import Header from "./layout/Header"
@@ -8,15 +10,28 @@ import { Route, Routes } from "react-router-dom"
 
 function App() {
 
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    },)
+  }, [])
+
   return (
-    <>
-    <Header/>
-    <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/mentorlar" element={<Mentors/>}/>
-    </Routes>
-    <ContactMe/>
-    <Footer/>
+    <>{loading ?
+      <LoadingSpinner />
+      :
+      <>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mentorlar" element={<Mentors />} />
+        </Routes>
+        <ContactMe />
+        <Footer />
+      </>
+    }
     </>
   )
 }
