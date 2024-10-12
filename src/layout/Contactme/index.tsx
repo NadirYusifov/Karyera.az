@@ -4,7 +4,7 @@ function ContactMe() {
       <div className="support-section mt-[130px] mb-[110px]">
         <div className="container">
           <div className='support-section-wrapper 2xl:mx-[232px]'>
-            <div className='support-content-img flex flex-col justify-center items-center w-full h-full rounded-2xl py-10 bg-blue-600 px-8'>
+            <div className='support-content-img flex flex-col justify-center items-center w-full h-full rounded-2xl py-10 bg-cyan-700 px-8'>
               <div className='support-header '>
                 <div className='support-text text-white pb-6 text-center'>
                   <h3 className="text-[40px] leading-[57.8px] font-semibold tracking-wide">Bizimlə əlaqə yarat!</h3>
