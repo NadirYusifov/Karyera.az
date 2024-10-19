@@ -169,19 +169,19 @@ function MentorsCard() {
   return (
     <>
 
-      <div className="mentors-card bg-blue-8 my-[110px]">
+      <div className="mentors-card bg-dark-moderate-cyan my-[110px] font-jakarta">
         <div className="mentors-card-header text-center pt-7">
           <Link to='/mentorlar'>
             <h3 className="text-white text-[40px] lg:text-[50px] leading-[70px] font-semibold">Mentorlarla Tanış Ol</h3>
           </Link>
-          <p className="text-white text-[20px] leading-[30px] font-medium">Mentorlar, inkişafa gedən yolun açarıdır.</p>
+          <p className="text-white text-[20px] leading-[30px] font-medium">Müxtəlif sahələrdə təcrübəsi olan mentorlarımızla ünsiyyətə keçin və inkişafınıza təkan verin.</p>
         </div>
         <div className="container">
 
           <Slider {...settings}>
             {mentors.map(mentor => (
               <div className="mentors-card-wraper px-1">
-                <div className="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm">
+                <div className="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-2xl shadow-sm">
                   <div className="relative h-40">
                     <img className="absolute h-full w-full object-cover" src={mentor.thumbnail} />
                   </div>
@@ -192,18 +192,17 @@ function MentorsCard() {
                     <h1 className="text-lg text-center font-semibold">
                       {mentor.name}
                     </h1>
-                    <p className="text-sm text-blue-8 text-center">
-                      <p className="text-blue-8">{mentor.work}</p>
-                    </p>
-                    <div className="mentors-description text-center my-3">
-                      <div className="mentors-desc-header text-gray-700">
+                      <p className="text-dark-moderate-cyan text-sm text-center font-normal leading-[20.16px]">{mentor.work}</p>
+                    <div className="mentors-description text-center mt-3 mb-6">
+                      <div className="mentors-desc-header text-[18px] font-normal leading-[22.68px] text-gray-700">
                         <p className="pt-5">{mentor.experience}</p>
                       </div>
                     </div>
-                    <div className="social-media flex justify-center items-center mt-10 space-x-4 text-[20px] text-white">
-                      {mentor.sosyalMedya.instagram && <a className="bg-blue-8 px-2 py-2 rounded-full" target="blank" href="https://www.instagram.com/"><span className="sr-only">{mentor.sosyalMedya.facebook}</span><FaInstagram/></a>}
-                      {mentor.sosyalMedya.facebook && <a className="bg-blue-8 px-2 py-2 rounded-full" target="blank" href="https://www.facebook.com/"><FaFacebook /></a>}
-                      {mentor.sosyalMedya.linkedin && <a className="bg-blue-8 px-2 py-2 rounded-full" target="blank" href="https://www.linkedin.com/"><FaLinkedin/></a>}
+                    <hr/>
+                    <div className="social-media flex justify-center items-center mt-3 space-x-4 text-[20px] text-white">
+                      {mentor.sosyalMedya.instagram && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.instagram.com/"><span className="sr-only">{mentor.sosyalMedya.facebook}</span><FaInstagram/></a>}
+                      {mentor.sosyalMedya.facebook && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.facebook.com/"><FaFacebook /></a>}
+                      {mentor.sosyalMedya.linkedin && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.linkedin.com/"><FaLinkedin/></a>}
                     </div>
                   </div>
 

@@ -7,9 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        "blue-8": "#0090FF",
-        "ashy-gray": "#8A8A8A",
-        "dark-charcoal": "#323232"
+        "very-dark-blue": "#194C6F",
+        "very-dark-desaturated-cyan": "#305865",
+        "very-dark-grayish-red": "#6B6767",
+        "light-grayish-blue": "#F1F5F8",
+        "light-grayish-red": "#F9F3F3",
+        "dark-grayish-red": "#817D7D",
+        "dark-moderate-cyan": "#4A91A7",
+        "dark-cyan": "#226478",
+        "mostly-desaturated-dark-cyan": "#53808C"
       },
       container: {
         center: true,

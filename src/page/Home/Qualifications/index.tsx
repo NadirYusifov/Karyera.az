@@ -104,15 +104,15 @@ function QualficitaionsCard() {
 
   return (
     <>
-      <div className='qualific-section-header mt-[130px]'>
+      <div className='qualific-section-header mt-[130px] font-jakarta'>
         <div className='container'>
           <div className='qualifictions-header-text text-center mb-8'>
-            <h2 className="text-blue-8 text-[50px] leading-[70px] font-semibold pb-2">Özünə Uyğun İxtisası Seç</h2>
+            <h2 className="text-dark-cyan text-[50px] leading-[70px] font-semibold pb-2">Özünə Uyğun İxtisası Seç</h2>
             <p className="text-[20px] leading-[30px] font-medium text-ashy-gray">Bu günün ixtisasları: texnologiya, kreativlik və analitika!</p>
           </div>
         </div>
       </div>
-      <div className='qualifictions-section-card relative'>
+      <div className='qualifictions-section-card font-jakarta relative'>
         <div className='container'>
           <div className='row'>
             <Slider {...settings}>
@@ -126,14 +126,14 @@ function QualficitaionsCard() {
                     />
                     <div className="p-4 sm:p-6">
                       <a href="#">
-                        <h3 className="text-lg font-medium text-gray-900">
+                        <h3 className="text-[20px] font-normal text-black leading-[25.2px]">
                           {soft.name}
                         </h3>
                       </a>
-                      <p className="mt-2 text-sm/relaxed text-gray-500 line-clamp-2">
+                      <p className="mt-2 text-[16px] text-gray-500 font-normal line-clamp-2 leading-[20.16px]">
                         {soft.title}
                       </p>
-                      <a href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+                      <a href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-dark-cyan">
                         Read More
                         <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
                           &rarr;

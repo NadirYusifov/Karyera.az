@@ -11,30 +11,11 @@ function Header() {
 
   return (
     <>
-      <div className="header-section font-jakarta sticky top-0 z-10 bg-white">
-        <div className="top-header max-sm:hidden bg-blue-8 py-2">
-          <div className="container">
-            <div className="flex justify-between">
-              <div className="top-header-contact flex gap-20 text-white">
-                <div className="top-header-phone flex items-center gap-2">
-                  <FiPhoneCall />
-                  <a href="tel:+994 50 123 44 55">+994 50 123 44 55</a>
-                </div>
-                <div className="top-header-email flex items-center gap-2">
-                  <FiMail />
-                  <a href="mailto:bashlaz@gmail.com">bashlaz@gmail.com</a>
-                </div>
-              </div>
-              <div className="top-header-lng">
-
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="header-section text-white font-jakarta sticky top-0 z-10 bg-very-dark-blue">
         <div className="container">
           <div className="row">
             <div className="flex justify-between flex-wrap py-4">
-              <div className="header-logo flex items-center text-[20px] font-bold text-gray-800">
+              <div className="header-logo flex items-center text-[20px] font-bold ">
                 {/* <img className="bg-transparent" src={BashlaAzImg}/> */}
                 <Link to='/'>
                   <h3>Bashla.az</h3>
@@ -54,8 +35,8 @@ function Header() {
                   </button>
                 </div>
                 <div className="header-register">
-                  <button className="border border-solid text-black rounded-md mr-3 px-2 py-1">Giriş</button>
-                  <button className="bg-blue-8 text-white rounded-md px-2 py-1">Qeydiyyat</button>
+                  <button className="border border-solid text-white rounded-full mr-3 px-2 py-1">Giriş</button>
+                  <button className="bg-white text-very-dark-blue rounded-full px-2 py-1">Qeydiyyat</button>
                 </div>
               </div>
             </div>

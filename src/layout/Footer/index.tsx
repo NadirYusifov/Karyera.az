@@ -1,84 +1,26 @@
-import { FiPhoneCall, FiMail } from "react-icons/fi";
+import { IoCall, IoMail } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
-      <footer className="bg-white text-dark-charcoal">
+      <footer className="bg-very-dark-blue text-light-grayish-blue tracking-wide">
         <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-6 sm:px-6 lg:space-y-8 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 lg:space-x-32">
             <div className="footer-caption">
-              <div className="text-blue-8 font-semibold text-[20px]">
+              <div className="text-white [text-shadow:_0_4px_4px_rgba(0,0,0,0.25)] font-semibold text-[36px] leading-[45.36px]">
                 <Link to='/'>
                   <h3>Bashla.az</h3>
                 </Link>
               </div>
-              <p className="mt-4 text-[16px] font-jakarta font-light leading-[20.16px]">
-                Bəlkə gələcəyə bizimlə Başlayasan?
+              <p className="mt-4 text-[16px] font-jakarta font-light leading-[20.16px] ">
+                Bəlkə gələcəyə bizimlə <span className="font-bold">Başlayasan?</span>
               </p>
 
-              <div className="footer-social">
-                <ul className="mt-8 flex gap-6">
-                  <li>
-                    <a
-                      href="https://www.facebook.com/"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="text-dark-charcoal transition hover:opacity-75"
-                    >
-                      <span className="sr-only">Facebook</span>
-                      <svg className="size-6" fill="currentColor" aria-hidden="true" viewBox="0 0 50 50">
-                        <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z" />
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="https://www.instagram.com/"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="text-dark-charcoal transition hover:opacity-75"
-                    >
-                      <span className="sr-only">Instagram</span>
-                      <svg className="size-6" fill="currentColor" aria-hidden="true" viewBox="0 0 50 50">
-                        <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="https://x.com/"
-                      rel="noreferrer"
-                      target="_blank"
-                      className="text-dark-charcoal transition hover:opacity-75"
-                    >
-                      <span className="sr-only">Twitter</span>
-
-                      <svg className="size-6" fill="currentColor" aria-hidden="true" viewBox="0 0 50 50">
-                        <path d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.youtube.com/"
-                      className="text-dark-charcoal transition hover:opacity-75"
-                    >
-                      <span className="sr-only">Youtube</span>
-
-                      <svg className="size-6" fill="currentColor" aria-hidden="true" viewBox="0 0 50 50">
-                        <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
-            <div className="footer-about font-jakarta max-sm:mt-8">
-              <h3 className="font-normal pb-3 text-[16px] leading-[20.16px]">Haqqımızda</h3>
-              <ul className="space-y-2 font-light">
+            <div className="footer-about text-white font-jakarta max-sm:mt-8">
+              <h3 className="font-semibold pb-5 text-[20px] leading-[20.2px]">Haqqımızda</h3>
+              <ul className="space-y-2 font-normal">
                 <li>Karyera testi</li>
                 <li>İxtisaslar</li>
                 <li><Link to='/mentorlar'>Mentorlar</Link></li>
@@ -87,8 +29,8 @@ function Footer() {
             </div>
 
             <div className="footer-qual font-jakarta max-md:my-8 ">
-              <h3 className="font-normal pb-3 text-[16px] leading-[20.16px]">İxtisaslar</h3>
-              <ul className="space-y-2 font-light">
+              <h3 className="font-semibold pb-5 text-[20px] leading-[20.2px]">İxtisaslar</h3>
+              <ul className="text-[16px] space-y-2 font-normal">
                 <li>Dizayn</li>
                 <li>Proqramlaşdırma</li>
                 <li>Mühasibat və audit</li>
@@ -96,15 +38,76 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="footer-contact font-jakarta">
-              <h3 className="font-normal pb-3 text-[16px] leading-[20.16px]">Əlaqə</h3>
-              <ul className="space-y-2 font-light">
-                <li><a className="inline-flex items-center gap-2" href="tel:+994501234555"><FiPhoneCall />+994 50 123 45 55</a></li>
-                <li><a className="inline-flex items-center gap-2" href="mailto:bashlaz@gmail.com"><FiMail />bashlaz@gmail.com</a></li>
+            <div className="footer-contact text-white font-jakarta leading-[20.2px]">
+              <h3 className=" font-semibold pb-3 text-[16px]">Əlaqə</h3>
+              <ul className=" space-y-2 font-semibold">
+                <li><a className="inline-flex items-center  gap-3 text-[16px]" href="tel:+994501234555"><IoCall className="text-[24px]"/>+994 50 123 45 55</a></li>
+                <li><a className="inline-flex items-center  gap-3 text-[16px]" href="mailto:bashlaz@gmail.com"><IoMail className="text-[24px]" />bashlaz@gmail.com</a></li>
               </ul>
+              <div className="footer-social">
+                <ul className="mt-8 flex gap-2">
+                  <li>
+                    <a
+                      href="https://www.youtube.com/"
+                      className="text-dark-charcoal transition hover:opacity-75"
+                    >
+                      <span className="sr-only">Youtube</span>
+                      <svg className="size-[52px]" fill="currentColor" aria-hidden="true" viewBox="0 0 48 48">
+                        <path d="M 23.857422 8.5 C 17.504717 8.5 11.602344 8.9526234 8.234375 9.65625 A 1.50015 1.50015 0 0 0 8.2128906 9.6621094 C 5.6754768 10.230693 3.2861897 12.048234 2.7832031 14.894531 A 1.50015 1.50015 0 0 0 2.78125 14.90625 C 2.394836 17.200265 2 20.190694 2 24.5 C 2 28.801151 2.3961903 31.712324 2.8847656 34.126953 C 3.4000756 36.889296 5.7342165 38.761817 8.3105469 39.337891 A 1.50015 1.50015 0 0 0 8.3476562 39.347656 C 11.86271 40.040284 17.598467 40.5 23.951172 40.5 C 30.303877 40.5 36.042686 40.04028 39.558594 39.347656 A 1.50015 1.50015 0 0 0 39.595703 39.337891 C 42.133117 38.769306 44.522404 36.951766 45.025391 34.105469 A 1.50015 1.50015 0 0 0 45.029297 34.083984 C 45.409789 31.743169 45.902812 28.755621 46 24.439453 A 1.50015 1.50015 0 0 0 46 24.40625 C 46 20.087697 45.50571 17.078675 45.023438 14.695312 C 44.512192 11.927074 42.175378 10.049478 39.595703 9.4726562 A 1.50015 1.50015 0 0 0 39.476562 9.4511719 C 36.0464 8.9689502 30.211115 8.5 23.857422 8.5 z M 20.15625 17.001953 C 20.526656 16.994297 20.909531 17.081906 21.269531 17.285156 L 29.873047 22.146484 C 31.324047 22.966484 31.324047 25.035469 29.873047 25.855469 L 21.269531 30.716797 C 19.830531 31.528797 18.037109 30.500328 18.037109 28.861328 L 18.037109 19.138672 C 18.037109 17.909422 19.045031 17.024922 20.15625 17.001953 z" />
+                      </svg>
+
+
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a
+                      href="https://www.instagram.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                      className="text-dark-charcoal transition hover:opacity-75"
+                    >
+                      <span className="sr-only">Instagram</span>
+                      <svg className="size-[52px]" fill="currentColor" viewBox="0 0 48 48">
+                        <path d="M 16.5 5 C 10.159 5 5 10.159 5 16.5 L 5 31.5 C 5 37.841 10.159 43 16.5 43 L 31.5 43 C 37.841 43 43 37.841 43 31.5 L 43 16.5 C 43 10.159 37.841 5 31.5 5 L 16.5 5 z M 34 12 C 35.105 12 36 12.895 36 14 C 36 15.104 35.105 16 34 16 C 32.895 16 32 15.104 32 14 C 32 12.895 32.895 12 34 12 z M 24 14 C 29.514 14 34 18.486 34 24 C 34 29.514 29.514 34 24 34 C 18.486 34 14 29.514 14 24 C 14 18.486 18.486 14 24 14 z M 24 17 A 7 7 0 1 0 24 31 A 7 7 0 1 0 24 17 z" />
+                      </svg>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a
+                      href="https://x.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                      className="text-dark-charcoal transition hover:opacity-75"
+                    >
+                      <span className="sr-only">TwitterX</span>
+                      <svg className="size-[52px]" fill="currentColor" aria-hidden="true" viewBox="0 0 48 48">
+                        <path d="M 12.5 6 C 8.916 6 6 8.916 6 12.5 L 6 35.5 C 6 39.084 8.916 42 12.5 42 L 35.5 42 C 39.084 42 42 39.084 42 35.5 L 42 12.5 C 42 8.916 39.084 6 35.5 6 L 12.5 6 z M 13.828125 14 L 20.265625 14 L 25.123047 20.943359 L 31.136719 14 L 33.136719 14 L 26.025391 22.234375 L 34.257812 34 L 27.820312 34 L 22.470703 26.351562 L 15.865234 34 L 13.822266 34 L 21.564453 25.056641 L 13.828125 14 z M 16.935547 15.695312 L 28.587891 32.304688 L 31.150391 32.304688 L 19.498047 15.695312 L 16.935547 15.695312 z" />
+                      </svg>
+
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a
+                      href="https://www.facebook.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                      className="text-dark-charcoal transition hover:opacity-75"
+                    >
+                      <span className="sr-only">Facebook</span>
+                      <svg className="size-[52px]" fill="currentColor" viewBox="0 0 48 48">
+                        <path d="M42,11.5v25c0,3.03-2.47,5.5-5.5,5.5H31V28h3.62c0.51,0,0.94-0.38,1-0.88l0.37-3c0.04-0.28-0.05-0.57-0.24-0.78 C35.56,23.12,35.29,23,35,23h-4v-3.5c0-1.1,0.9-2,2-2h2c0.55,0,1-0.45,1-1v-3.38c0-0.51-0.4-0.94-0.91-0.99 C35.03,12.12,33.62,12,31.83,12c-4.4,0-6.83,2.62-6.83,7.37V23h-4c-0.55,0-1,0.45-1,1v3c0,0.55,0.45,1,1,1h4v14H11.5 C8.47,42,6,39.53,6,36.5v-25C6,8.47,8.47,6,11.5,6h25C39.53,6,42,8.47,42,11.5z" />
+                      </svg>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
             </div>
           </div>
-          <p className="text-xs text-gray-400">&copy; 2024. <span className="text-blue-8">Bashla.az</span>. All rights reserved.</p>
+          <p className="text-[13px] text-light-grayish-red font-semibold">&copy; 2024. Bashla.az. All rights reserved.</p>
 
         </div>
       </footer>
