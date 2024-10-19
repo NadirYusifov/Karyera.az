@@ -41,8 +41,8 @@ function Footer() {
             <div className="footer-contact text-white font-jakarta leading-[20.2px]">
               <h3 className=" font-semibold pb-3 text-[16px]">Əlaqə</h3>
               <ul className=" space-y-2 font-semibold">
-                <li><a className="inline-flex items-center  gap-3 text-[16px]" href="tel:+994501234555"><IoCall className="text-[24px]"/>+994 50 123 45 55</a></li>
-                <li><a className="inline-flex items-center  gap-3 text-[16px]" href="mailto:bashlaz@gmail.com"><IoMail className="text-[24px]" />bashlaz@gmail.com</a></li>
+                <li><a className="inline-flex items-center gap-1 text-[16px]" href="tel:+994501234555"><IoCall className="text-[24px]"/>+994 50 123 45 55</a></li>
+                <li><a className="inline-flex items-center gap-1 text-[16px]" href="mailto:bashlaz@gmail.com"><IoMail className="text-[24px]" />bashlaz@gmail.com</a></li>
               </ul>
               <div className="footer-social">
                 <ul className="mt-8 flex gap-2">

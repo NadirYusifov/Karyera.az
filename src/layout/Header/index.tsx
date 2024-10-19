@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoIosClose, IoIosSearch } from "react-icons/io";
-import { FiPhoneCall, FiMail } from "react-icons/fi";
+// import { FiPhoneCall, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
 // import BashlaAzImg from "../../../public/Preview.png"
 
