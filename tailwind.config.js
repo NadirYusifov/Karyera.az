@@ -10,6 +10,7 @@ export default {
         "very-dark-blue": "#194C6F",
         "very-dark-desaturated-cyan": "#305865",
         "very-dark-grayish-red": "#6B6767",
+        "very-dark-gray": "#5f5f5f",
         "light-grayish-blue": "#F1F5F8",
         "light-grayish-red": "#F9F3F3",
         "dark-grayish-red": "#817D7D",

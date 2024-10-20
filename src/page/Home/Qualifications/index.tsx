@@ -108,7 +108,7 @@ function QualficitaionsCard() {
         <div className='container'>
           <div className='qualifictions-header-text text-center mb-8'>
             <h2 className="text-dark-cyan text-[50px] leading-[70px] font-semibold pb-2">Özünə Uyğun İxtisası Seç</h2>
-            <p className="text-[20px] leading-[30px] font-medium text-ashy-gray">Bu günün ixtisasları: texnologiya, kreativlik və analitika!</p>
+            <p className="text-[20px] leading-[30px] font-medium text-very-dark-gray">Bu günün ixtisasları: texnologiya, kreativlik və analitika!</p>
           </div>
         </div>
       </div>
