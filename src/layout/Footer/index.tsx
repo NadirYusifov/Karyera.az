@@ -22,9 +22,9 @@ function Footer() {
               <div className="footer-about text-white font-jakarta max-sm:mt-8">
                 <h3 className="font-semibold pb-5 text-[20px] leading-[20.2px]">Haqqımızda</h3>
                 <ul className="space-y-2 font-normal">
-                  <li>Karyera testi</li>
+                  <Link to='/career'><li>Karyera testi</li></Link>
                   <li>İxtisaslar</li>
-                  <li><Link to='/mentorlar'>Mentorlar</Link></li>
+                  <Link to='/mentorlar'><li>Mentorlar</li></Link>
                   <li>Blog</li>
                 </ul>
               </div>
