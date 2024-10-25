@@ -130,7 +130,7 @@ function Mentor() {
         <>
             <div className="mentors-card px-1">
                 <div className="container">
-                    <div className="mentors-card-wrapper grid grid-cols-1 lg:grid-cols-3 font-jakarta">
+                    <div className="mentors-card-wrapper grid grid-cols-1 place-items-center lg:grid-cols-2 xl:grid-cols-3 gap-x-3 font-jakarta">
                         {mentors.map(mentor => (
                             <div className="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm">
                                 <div className="relative h-40">

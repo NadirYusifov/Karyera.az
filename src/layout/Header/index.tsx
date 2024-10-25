@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <>
-      <div className="header-section text-white font-jakarta sticky top-0 z-10 bg-very-dark-blue">
+      <div className="header-section text-white font-jakarta sticky top-0 z-[99999] bg-very-dark-blue">
         <div className="container">
           <div className="row">
             <div className="flex justify-between flex-wrap py-4">
@@ -34,8 +34,12 @@ function Header() {
                   
                 </div>
                 <div className="header-register">
+                  <Link to={"/login"}>
                   <button className="border border-solid text-white text-[16px] font-semibold leading-[20.16px] rounded-full mr-3 px-5 py-[10px]">Giriş</button>
+                  </Link>
+                  <Link to={""}>
                   <button className="bg-white text-very-dark-blue text-[16px] font-semibold leading-[20.16px] rounded-full px-5 py-[10px]">Qeydiyyat</button>
+                  </Link>
                 </div>
               </div>
             </div>

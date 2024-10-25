@@ -67,18 +67,17 @@ function QualficitaionsCard() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <NextArrow/>,
-    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          arrows: true,
+          arrows: false,
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          nextArrow: <NextArrow/>,
-          prevArrow: <PrevArrow/>,
+
         }
       },
       {
