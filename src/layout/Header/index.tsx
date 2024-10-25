@@ -23,7 +23,7 @@ function Header() {
               </div>
               <nav className="header-nav flex justify-center items-center max-sm:hidden max-md:hidden">
                 <Link to='/' className="px-2">Əsas səhifə</Link>
-                <a className="px-2">Karyera testi</a>
+                <Link to='/career' className="px-2">Karyera testi</Link>
                 <a className="px-2">İxtisaslar</a>
                 <Link to='/mentorlar' className="px-2">Mentorlar</Link>
                 <a className="px-2">Blog</a>

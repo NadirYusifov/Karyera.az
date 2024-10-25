@@ -6,10 +6,14 @@ import Header from "./layout/Header"
 import Home from "./page/Home"
 import Mentors from "./page/Mentor"
 
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom"
 import Login from "./page/Login"
+import Career from "./page/Career"
 
 function App() {
+  const location = useLocation()
+  const isLoginPageShow = location.pathname === "/login"
+  const isCareerPageShow = location.pathname === "/career"
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -29,15 +33,16 @@ function App() {
             <Route path="/login" element={<Login />} />
           </Routes> */}
           
-          {/* {location.pathname === 'login' && <Header/>} */}
-          <Header />
+          {/* <Header /> */}
+          {!isLoginPageShow && !isCareerPageShow && <Header/>}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/career" element={<Career />} />
             <Route path="/mentorlar" element={<Mentors />} />
           </Routes>
-          <ContactMe />
-          <Footer />
+          {!isLoginPageShow && !isCareerPageShow && <ContactMe/>}
+          {!isLoginPageShow && !isCareerPageShow && <Footer />}
         </>
       }
     </>
