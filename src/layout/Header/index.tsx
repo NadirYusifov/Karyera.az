@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 // import { IoIosClose, IoIosSearch } from "react-icons/io";
 // import { FiPhoneCall, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { AiOutlineClose } from "react-icons/ai";
+// import { HiOutlineMenuAlt2 } from "react-icons/hi";
+// import { AiOutlineClose } from "react-icons/ai";
 // import BashlaAzImg from "../../../public/Preview.png"
 
 function Header() {
 
-  const [Menu, setMenu] = useState<boolean>(false);
+  // const [Menu, setMenu] = useState<boolean>(false);
 
 
   return (
