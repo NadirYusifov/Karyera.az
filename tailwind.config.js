@@ -16,19 +16,20 @@ export default {
         "dark-grayish-red": "#817D7D",
         "dark-moderate-cyan": "#4A91A7",
         "dark-cyan": "#226478",
-        "mostly-desaturated-dark-cyan": "#53808C"
+        "mostly-desaturated-dark-cyan": "#53808C",
+        "mostly-black": "#242424"
       },
       container: {
         center: true,
         padding: {
           DEFAULT: '1rem',
           sm: '2rem',
-          lg: '4rem',
-          xl: '5rem',
-          '2xl': '6rem',
+          lg: '3rem',
+          xl: '4rem',
+          '2xl': '5rem',
         },
       },
-      fontFamily :{
+      fontFamily: {
         jakarta: ["Plus Jakarta Sans"]
       }
     },

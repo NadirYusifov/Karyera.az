@@ -128,9 +128,17 @@ function Mentor() {
 
     return (
         <>
-            <div className="mentors-card px-1">
+            <section className="mentors-card-section px-1">
                 <div className="container">
-                    <div className="mentors-card-wrapper grid grid-cols-1 place-items-center lg:grid-cols-2 xl:grid-cols-3 gap-x-3 font-jakarta">
+                    <div className="mentors-header text-center text-very-dark-blue mt-[95px]">
+                        <div className="mentors-header-content text-[52px] font-semibold leading-[65.52px]">
+                            <h3>Mentorlarla tanış ol!</h3>
+                        </div>
+                        <div className="mentors-header-main text-[22px] font-medium leading-[27.72px] pt-2">
+                            <p>Müxtəlif sahələrdə təcrübəsi olan mentorlarımızla ünsiyyətə keçin və inkişafınıza təkan verin.</p>
+                        </div>
+                    </div>
+                    <div className="mentors-card-wrapper grid grid-cols-1 place-content-center place-items-center lg:grid-cols-2 xl:grid-cols-3 gap-x-3 font-jakarta">
                         {mentors.map(mentor => (
                             <div className="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm">
                                 <div className="relative h-40">
@@ -143,15 +151,15 @@ function Mentor() {
                                     <h1 className="text-[24px] leading-[30.24px] text-center font-semibold">
                                         {mentor.name}
                                     </h1>
-                                    <div className="text-[16px] font-medium leading-[20.16px] text-dark-moderate-cyan text-center">
+                                    <div className="text-[16px] font-medium leading-[20.16px] text-dark-moderate-cyan text-center mb-6 my-2">
                                         <p className="text-[18px] leading-[22.68px] font-medium text-blue-8">{mentor.work}</p>
                                     </div>
-                                    <div className="mentors-description text-center my-3 mb-6">
+                                    {/* <div className="mentors-description text-center my-3 mb-6">
                                         <div className="mentors-desc-header text-[18px] font-normal leading-[22.68px] text-gray-700 pt-5">
                                             <p>{mentor.experience}</p>
                                         </div>
-                                    </div>
-                                    <hr/>
+                                    </div> */}
+                                    <hr />
                                     <div className="social-media flex justify-center items-center mt-3 space-x-4 text-[20px] text-white">
                                         {mentor.sosyalMedya.instagram && <a className="bg-very-dark-blue px-2 py-2 rounded-full" href="https://www.instagram.com/"><FaInstagram /></a>}
                                         {mentor.sosyalMedya.facebook && <a className="bg-very-dark-blue px-2 py-2 rounded-full" href="https://www.facebook.com/"><FaFacebook /></a>}
@@ -162,7 +170,7 @@ function Mentor() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

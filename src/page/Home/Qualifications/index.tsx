@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NextArrow from "../../../utils/nextarrow";
 import PrevArrow from "../../../utils/prevarrow";
+import { Link } from "react-router-dom";
 
 
 function QualficitaionsCard() {
@@ -103,7 +104,7 @@ function QualficitaionsCard() {
 
   return (
     <>
-      <div className='qualific-section-header mt-[130px] font-jakarta'>
+      <div className='qualific-section-header mt-[130px] '>
         <div className='container'>
           <div className='qualifictions-header-text text-center mb-8'>
             <h2 className="text-dark-cyan text-[50px] leading-[70px] font-semibold pb-2">Özünə Uyğun İxtisası Seç</h2>
@@ -116,28 +117,25 @@ function QualficitaionsCard() {
           <div className='row'>
             <Slider {...settings}>
               {softwareDevelopers.map(soft => (
-                <div className="px-1">
-                  <article className="overflow-hidden p-2 rounded-lg border border-gray-100 bg-white shadow-sm">
+                <div className="lg:px-12 mt-10">
+                  <article className="overflow-hidden px-[22px] py-4 rounded-3xl border border-gray-100 bg-white shadow-lg">
                     <img
                       alt="softwareimg"
                       src={soft.image}
-                      className="h-56 w-full object-cover rounded-lg"
+                      className="h-56 w-full object-cover rounded-3xl"
                     />
                     <div className="p-4 sm:p-6">
                       <a href="#">
-                        <h3 className="text-[20px] font-normal text-black leading-[25.2px]">
+                        <h3 className="text-[20px] font-medium text-black leading-[25.2px]">
                           {soft.name}
                         </h3>
                       </a>
-                      <p className="mt-2 text-[16px] text-gray-500 font-normal line-clamp-2 leading-[20.16px]">
+                      <p className="mt-2 text-[16px] text-gray-500 font-normal line-clamp-2 leading-[20.16px] pt-3">
                         {soft.title}
                       </p>
-                      <a href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-dark-cyan">
-                        Read More
-                        <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                          &rarr;
-                        </span>
-                      </a>
+                      <Link to="#" className="text-[16px] flex justify-end group mt-4 text-sm font-medium text-dark-cyan leading-[20.16px] pt-8">
+                        Daha çox
+                      </Link>
                     </div>
                   </article>
                 </div>

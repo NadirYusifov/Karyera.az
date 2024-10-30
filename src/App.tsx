@@ -9,6 +9,7 @@ import Mentors from "./page/Mentor"
 import { Route, Routes, useLocation } from "react-router-dom"
 import Login from "./page/Login"
 import Career from "./page/Career"
+import About from "./page/About"
 
 function App() {
   const location = useLocation()
@@ -32,16 +33,17 @@ function App() {
           {/* <Routes>
             <Route path="/login" element={<Login />} />
           </Routes> */}
-          
+
           {/* <Header /> */}
-          {!isLoginPageShow && !isCareerPageShow && <Header/>}
+          {!isLoginPageShow && !isCareerPageShow && <Header />}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/career" element={<Career />} />
             <Route path="/mentorlar" element={<Mentors />} />
+            <Route path="/about" element={<About />} />
           </Routes>
-          {!isLoginPageShow && !isCareerPageShow && <ContactMe/>}
+          {!isLoginPageShow && !isCareerPageShow && <ContactMe />}
           {!isLoginPageShow && !isCareerPageShow && <Footer />}
         </>
       }

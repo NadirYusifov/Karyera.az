@@ -12,7 +12,7 @@ function LoadingSpinner() {
     <>
     <div className="flex justify-center items-center h-screen">
         <HashLoader 
-        color="#0090ff"
+        color="#194C6F"
         cssOverride={override}
         size={80}
         /> 

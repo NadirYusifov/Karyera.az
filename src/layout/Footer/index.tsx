@@ -7,46 +7,39 @@ function Footer() {
       <footer className="bg-very-dark-blue text-light-grayish-blue tracking-wide">
         <div className="container">
           <div className="space-y-8 py-6 sm:px-6 lg:space-y-8">
-            <div className="grid grid-cols-1 lg:grid-cols-4 lg:space-x-32">
+            <div className="grid grid-cols-1 lg:grid-cols-3">
               <div className="footer-caption">
                 <div className="text-white [text-shadow:_0_4px_4px_rgba(0,0,0,0.25)] font-semibold text-[36px] leading-[45.36px]">
                   <Link to='/'>
                     <h3>Bashla.az</h3>
                   </Link>
                 </div>
-                <p className="mt-4 text-[16px] font-jakarta font-light leading-[20.16px] ">
+                <p className="mt-4 text-[16px] font-jakarta font-light">
                   Bəlkə gələcəyə bizimlə <span className="font-bold">Başlayasan?</span>
                 </p>
-
               </div>
-              <div className="footer-about text-white font-jakarta max-sm:mt-8">
-                <h3 className="font-semibold pb-5 text-[20px] leading-[20.2px]">Haqqımızda</h3>
-                <ul className="space-y-2 font-normal">
+
+              <div className="footer-about text-white font-jakarta my-8 lg:my-3">
+                {/* <h3 className="font-semibold pb-5 text-[20px] leading-[20.2px]">Haqqımızda</h3> */}
+                <ul className="w-max text-[18px] lg:flex flex-row justify-center items-center font-medium lg:space-x-8">
+                  <Link to='/about'><li>Haqqımızda</li></Link>
                   <Link to='/career'><li>Karyera testi</li></Link>
-                  <li>İxtisaslar</li>
+                  <Link to='/'><li>İxtisaslar</li></Link>
                   <Link to='/mentorlar'><li>Mentorlar</li></Link>
-                  <li>Blog</li>
                 </ul>
               </div>
 
-              <div className="footer-qual font-jakarta max-md:my-8 ">
-                <h3 className="font-semibold pb-5 text-[20px] leading-[20.2px]">İxtisaslar</h3>
-                <ul className="text-[16px] space-y-2 font-normal">
-                  <li>Dizayn</li>
-                  <li>Proqramlaşdırma</li>
-                  <li>Mühasibat və audit</li>
-                  <li>Kiber Təhlukəsizlik</li>
-                </ul>
-              </div>
-
-              <div className="footer-contact text-white font-jakarta leading-[20.2px]">
+              <div className="footer-contact text-white font-jakarta leading-[20.2px] lg:ml-40">
                 <h3 className=" font-semibold pb-3 text-[16px]">Əlaqə</h3>
                 <ul className=" space-y-2 font-semibold">
                   <li><a className="inline-flex items-center gap-1 text-[16px]" href="tel:+994501234555"><IoCall className="text-[24px]" />+994 50 123 45 55</a></li>
                   <li><a className="inline-flex items-center gap-1 text-[16px]" href="mailto:bashlaz@gmail.com"><IoMail className="text-[24px]" />bashlaz@gmail.com</a></li>
                 </ul>
-                <div className="footer-social">
-                  <ul className="mt-8 flex gap-2">
+              </div>
+            </div>
+
+            <div className="footer-social flex justify-center">
+                  <ul className="mt-2 flex gap-14">
                     <li>
                       <a
                         href="https://www.youtube.com/"
@@ -102,9 +95,7 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
-            <p className="text-[13px] text-light-grayish-red font-semibold">&copy; 2024. Bashla.az. All rights reserved.</p>
+            <p className="text-[13px] text-center text-light-grayish-red font-semibold">&copy; 2024. Bashla.az. All rights reserved.</p>
           </div>
         </div>
       </footer>

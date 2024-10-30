@@ -4,6 +4,7 @@ import VectorHeroImg from "/public/Vector.svg"
 import ThreeLine from "/public/GroupLine.svg"
 import EllipseYellow from "/public/EllipseYellow.svg"
 import EllipseBlue from "/public/EllipseBlue.svg"
+import { Link } from "react-router-dom"
 
 function HeroSection() {
   return (
@@ -22,7 +23,9 @@ function HeroSection() {
                   Karyera testi ilə bu günün tələb olunan ixtisaslarını kəşf edin, güclü tərəflərinizi üzə çıxarın və iş dünyasında öz yerinizi tapın.
                 </p>
                 <div className='btn-wrapper relative flex'>
-                  <button className="btn text-[25px] rounded-xl px-10 py-4 mr-10 mb-8 hover:bg-cyan-900 text-white bg-dark-cyan leading-[35px]">Testə keçid edin</button>
+                  <Link to='/career'>
+                    <button className="btn text-[25px] rounded-xl px-10 py-4 mr-10 mb-8 hover:bg-cyan-900 text-white bg-dark-cyan leading-[35px]">Testə keçid edin</button>
+                  </Link>
                 </div>
               </div>
               <div className="hero-vector hidden xl:block absolute translate-x-56 translate-y-16">
@@ -33,13 +36,13 @@ function HeroSection() {
                   alt="heroimg"
                   src={HeroImg}
                   className="relative z-20" />
-                  <img
+                <img
                   alt="heroimg"
                   src={EllipseYellow}
                   className="absolute top-0 left-0 right-0 translate-x-40 -translate-y-28" />
-                  <img
+                <img
                   alt="heroimg"
-                  src={EllipseBlue} 
+                  src={EllipseBlue}
                   className="absolute top-0 right-0 left-0 -translate-x-20 translate-y-80" />
               </div>
             </div>
