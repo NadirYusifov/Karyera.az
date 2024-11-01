@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import './index.css';
-import image from "/public/kariyera_test.png";
+import AnswerImage from "/public/Answer.png";
 
 const questions = [
   {
@@ -186,63 +186,65 @@ const Career = () => {
   };
 
   return (
-    <div className="container_career block lg:flex h-screen font-jakarta">
-      <div className="left-section w-full lg:w-2/5 lg:bg-very-dark-blue flex items-center justify-center">
+    <div className="container_career block lg:flex w-full h-screen font-jakarta">
+      <div className="left-section hidden lg:block h-full px-5 py-3 lg:bg-very-dark-blue">
         <div className="illustration hidden lg:block">
-          <img className="w-[650px] h-[480px]" src={image} alt="Illustration" />
+          <img className="w-full" src={AnswerImage} alt="Illustration" />
         </div>
       </div>
-      <div className="right-section w-full h-screen lg:w-3/5 p-10 flex flex-col justify-center bg-white">
-        {quizEnded ? (
-          <div className="end-message">
-            <h2 className="endm text-very-dark-blue text-[84px] text-center font-semibold">Təbriklər!</h2>
-            <p className="endp text-center text-[#2F78AA] text-[32px] leading-[60px]"> İndi sizə ən uyğun karyera sahələrini təqdim edirik!</p>
-            <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-[100px] ml-[550px]">Nəticə</button>
-          </div>
-        ) : (
-          <>
-
-            <div className="progress-bar ml-5 lg:w-[750px] h-5 bg-[#E0E0E0] rounded-full mb-5">
-              <div
-                className="progress-bar-fill h-full bg-[#1D4F91] rounded-full transition all ease-in-out"
-                style={{ width: `${progress}%` }}
-              ></div>
+      <div className="right-section w-full h-screen p-10 flex flex-col justify-center bg-white">
+        <div className="container">
+          {quizEnded ? (
+            <div className="end-message">
+              <h2 className="endm text-very-dark-blue text-[84px] text-center font-semibold">Təbriklər!</h2>
+              <p className="endp text-center text-[#2F78AA] text-[32px] leading-[60px]"> İndi sizə ən uyğun karyera sahələrini təqdim edirik!</p>
+              <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-[100px] ml-[550px]">Nəticə</button>
             </div>
+          ) : (
+            <>
 
-            <div className="question-header">
-              <h2 className="text-[24px] mx-[30px]">{`${currentQuestion + 1}/${questions.length}`}</h2>
-              <p className="lg:w-[750px] text-[32px] my-5 mx-[30px] font-medium">{questions[currentQuestion].question}</p>
-            </div>
+              <div className="progress-bar w-full h-5 bg-[#E0E0E0] rounded-full mb-5">
+                <div
+                  className="progress-bar-fill h-full bg-[#1D4F91] rounded-full transition all ease-in-out"
+                  style={{ width: `${progress}%` }}
+                ></div>
+              </div>
 
-            <div className="options flex flex-col">
-              {questions[currentQuestion].options.map((option, index) => (
-                <label key={index} className={`option ${selectedOption === option ? "selected" : ""} flex items-center lg:w-[748px] h-[70px] rounded-full border-solid border border-very-dark-blue pl-[50px] ml-[10px] mb-[10px] text-[20px] cursor-pointer bg-white text-[#242424] text-left hover:bg-very-dark-blue hover:text-white`}>
-                  <input
-                    type="radio"
-                    name="options"
-                    value={option}
-                    checked={selectedOption === option}
-                    onChange={() => handleOptionClick(option)}
-                    style={{ display: "none" }}
-                  />
-                  {option}
-                </label>
-              ))}
-            </div>
+              <div className="question-header">
+                <h2 className="text-[23px]">{`${currentQuestion + 1}/${questions.length}`}</h2>
+                <p className="text-[23px] lg:text-[32px] my-5 font-medium">{questions[currentQuestion].question}</p>
+              </div>
 
-            <div className="navigation flex justify-between mt-[10px] mr-[100px] mb-0 ml-[30px]">
-              {currentQuestion === 0 ? (
-                <Link to='/'>
-                  <h4>Ana səhifə</h4>
-                </Link>
-              ) : (
-                <button className="back-btn" onClick={handleBackClick}>
-                  Geri
-                </button>
-              )}
-            </div>
-          </>
-        )}
+              <div className="options flex flex-col">
+                {questions[currentQuestion].options.map((option, index) => (
+                  <label key={index} className={`option ${selectedOption === option ? "selected" : ""} flex items-center w-full h-full rounded-full border-solid border border-very-dark-blue pl-[35px] py-3 mb-[10px] text-[18px] lg:[20px] cursor-pointer bg-white text-[#242424] text-left hover:bg-very-dark-blue hover:text-white`}>
+                    <input
+                      type="radio"
+                      name="options"
+                      value={option}
+                      checked={selectedOption === option}
+                      onChange={() => handleOptionClick(option)}
+                      style={{ display: "none" }}
+                    />
+                    {option}
+                  </label>
+                ))}
+              </div>
+
+              <div className="navigation flex justify-end mt-[10px]  mb-0 ">
+                {currentQuestion === 0 ? (
+                  <Link to='/'>
+                    <h4>Ana səhifə</h4>
+                  </Link>
+                ) : (
+                  <button className="back-btn text-" onClick={handleBackClick}>
+                    Geri
+                  </button>
+                )}
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

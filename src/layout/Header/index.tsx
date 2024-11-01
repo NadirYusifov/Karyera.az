@@ -20,7 +20,7 @@ function Header() {
               <div className="header-logo flex items-center text-[20px] font-bold ">
                 {/* <img className="bg-transparent" src={BashlaAzImg}/> */}
                 <Link to='/'>
-                  <h3>Bashla.az</h3>
+                  <h3>Karyera Z</h3>
                 </Link>
               </div>
               <nav className="header-nav flex justify-center items-center max-sm:hidden max-md:hidden">
@@ -35,7 +35,7 @@ function Header() {
                   <Link to={"/login"}>
                     <button className="border border-solid text-white text-[16px] font-semibold leading-[20.16px] rounded-full mr-3 px-5 py-[10px]">Giriş</button>
                   </Link>
-                  <Link to={""}>
+                  <Link to={"/signup"}>
                     <button className="bg-white text-very-dark-blue text-[16px] font-semibold leading-[20.16px] rounded-full px-5 py-[10px]">Qeydiyyat</button>
                   </Link>
                 </div>

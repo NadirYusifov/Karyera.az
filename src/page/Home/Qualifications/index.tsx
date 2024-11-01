@@ -1,8 +1,8 @@
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import NextArrow from "../../../utils/nextarrow";
-import PrevArrow from "../../../utils/prevarrow";
+import NextArrow from "../../../lib/nextarrow";
+import PrevArrow from "../../../lib/prevarrow";
 import { Link } from "react-router-dom";
 
 

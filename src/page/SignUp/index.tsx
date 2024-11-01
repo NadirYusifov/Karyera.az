@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom"
 
-function Login() {
+function SignUp() {
   return (
     <>
       <section className="login-section w-full h-screen bg-[#143A55] flex items-center font-jakarta">
         <div className="container flex items-center justify-center">
           <div className="login-wrapper w-[824px] h-screen md:h-full bg-white rounded-xl px-[109px] py-[90px]">
             <div className="login-header text-[48px] text-center font-medium leading-[60.48px] mb-10">
-              <h3>Giriş</h3>
+              <h3>Qeydiyyat</h3>
             </div>
             <div className="login-input mb-10">
               <form className="flex flex-col">
+                <input className="w-full text-[18px] px-10 py-2 outline-none border rounded-xl mb-4" placeholder="Adınız" required />
                 <div className="login-mail flex items-center relative">
                   <input className="w-full text-[18px] px-10 py-2 outline-none border rounded-xl mb-4" placeholder="Epoçt" required />
                   <div className="login-mail-icon absolute top-3 left-0 ml-2">
@@ -30,7 +31,7 @@ function Login() {
                   </div>
                 </div>
                 <p className="text-right text-[15px] text-very-dark-blue font-medium leading-[15px] pb-10 pt-1">Şifrəni unutmusunuz?</p>
-                <button className="bg-very-dark-blue text-white text-[20px] font-semibold leading-[45.36px] rounded-xl" type="submit">Giriş</button>
+                <button className="bg-very-dark-blue text-white text-[20px] font-semibold leading-[45.36px] rounded-xl" type="submit">Qeydiyyat</button>
               </form>
             </div>
             <hr />
@@ -61,7 +62,7 @@ function Login() {
                 </button>
               </div>
               <div className="login-register-link text-center">
-                <p>Hesabınız yoxdur? <Link className="text-very-dark-blue underline" to={"/signup"}>Qeydiyyat</Link></p>
+                <p>Hesabınız var? <Link className="text-very-dark-blue underline" to={"/login"}>Giriş</Link></p>
               </div>
             </div>
           </div>
@@ -71,4 +72,4 @@ function Login() {
   )
 }
 
-export default Login
+export default SignUp

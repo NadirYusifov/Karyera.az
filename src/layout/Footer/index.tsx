@@ -11,12 +11,12 @@ function Footer() {
               <div className="footer-caption">
                 <div className="text-white [text-shadow:_0_4px_4px_rgba(0,0,0,0.25)] font-semibold text-[36px] leading-[45.36px]">
                   <Link to='/'>
-                    <h3>Bashla.az</h3>
+                    <h3>Karyera Z</h3>
                   </Link>
                 </div>
-                <p className="mt-4 text-[16px] font-jakarta font-light">
+                {/* <p className="mt-4 text-[16px] font-jakarta font-light">
                   Bəlkə gələcəyə bizimlə <span className="font-bold">Başlayasan?</span>
-                </p>
+                </p> */}
               </div>
 
               <div className="footer-about text-white font-jakarta my-8 lg:my-3">
@@ -33,7 +33,7 @@ function Footer() {
                 <h3 className=" font-semibold pb-3 text-[16px]">Əlaqə</h3>
                 <ul className=" space-y-2 font-semibold">
                   <li><a className="inline-flex items-center gap-1 text-[16px]" href="tel:+994501234555"><IoCall className="text-[24px]" />+994 50 123 45 55</a></li>
-                  <li><a className="inline-flex items-center gap-1 text-[16px]" href="mailto:bashlaz@gmail.com"><IoMail className="text-[24px]" />bashlaz@gmail.com</a></li>
+                  <li><a className="inline-flex items-center gap-1 text-[16px]" href="mailto:karyeraZ@gmail.com"><IoMail className="text-[24px]" />karyeraZ@gmail.com</a></li>
                 </ul>
               </div>
             </div>
@@ -95,7 +95,7 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-            <p className="text-[13px] text-center text-light-grayish-red font-semibold">&copy; 2024. Bashla.az. All rights reserved.</p>
+            <p className="text-[13px] text-center text-light-grayish-red font-semibold">&copy; 2024. Karyera Z. All rights reserved.</p>
           </div>
         </div>
       </footer>

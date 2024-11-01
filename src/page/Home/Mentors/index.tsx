@@ -192,11 +192,6 @@ function MentorsCard() {
                       {mentor.name}
                     </h1>
                     <p className="text-dark-moderate-cyan text-[18px] text-center font-normal leading-[20.16px]">{mentor.work}</p>
-                    <div className="mentors-description text-center mt-3 mb-6">
-                      <div className="mentors-desc-header text-[18px] font-normal leading-[22.68px] text-gray-700 pt-5">
-                        <p>{mentor.experience}</p>
-                      </div>
-                    </div>
                     <hr />
                     <div className="social-media flex justify-center items-center mt-3 space-x-4 text-[20px] text-white">
                       {mentor.sosyalMedya.instagram && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.instagram.com/"><span className="sr-only">{mentor.sosyalMedya.facebook}</span><FaInstagram /></a>}
