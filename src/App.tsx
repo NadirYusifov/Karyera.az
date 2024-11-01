@@ -12,7 +12,7 @@ import Career from "./page/Career"
 import About from "./page/About"
 import SignUp from "./page/SignUp"
 import ScrollTopPage from "./lib/scrolltopage/ScrollTopPage"
-import axios from "axios"
+// import axios from "axios"
 
 function App() {
   // const location = useLocation()
