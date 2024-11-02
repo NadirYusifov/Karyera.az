@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import LoadingSpinner from "./Components/Loading"
-// import ContactMe from "./layout/Contactme"
 import Footer from "./layout/Footer"
+import ContactMe from "./layout/Contactme"
 import Header from "./layout/Header"
 import Home from "./page/Home"
 import Mentors from "./page/Mentor"
@@ -61,6 +61,7 @@ function App() {
             <Route path="/ixtisaslar" element={<QualificationsPage />} />
             <Route path="/haqqımızda" element={<About />} />
           </Routes>
+          <ContactMe />
           <Footer />
           {/* {!isLoginPageShow && !isCareerPageShow && <ContactMe />}
           {!isLoginPageShow && !isCareerPageShow && <Footer />} */}
