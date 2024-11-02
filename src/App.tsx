@@ -12,6 +12,7 @@ import Career from "./page/Career"
 import About from "./page/About"
 import SignUp from "./page/SignUp"
 import ScrollTopPage from "./lib/scrolltopage/ScrollTopPage"
+import QualificationsPage from "./page/Qualifications"
 // import axios from "axios"
 
 function App() {
@@ -53,11 +54,12 @@ function App() {
           <ScrollTopPage />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/career" element={<Career />} />
+            <Route path="/giriş" element={<Login />} />
+            <Route path="/qeydiyyat" element={<SignUp />} />
+            <Route path="/karyera" element={<Career />} />
             <Route path="/mentorlar" element={<Mentors />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/ixtisaslar" element={<QualificationsPage />} />
+            <Route path="/haqqımızda" element={<About />} />
           </Routes>
           <Footer />
           {/* {!isLoginPageShow && !isCareerPageShow && <ContactMe />}

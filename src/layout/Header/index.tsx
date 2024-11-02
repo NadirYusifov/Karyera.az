@@ -25,17 +25,17 @@ function Header() {
               </div>
               <nav className="header-nav flex justify-center items-center max-sm:hidden max-md:hidden">
                 <Link to='/' className="px-2">Əsas səhifə</Link>
-                <Link to='/career' className="px-2">Karyera testi</Link>
-                <a className="px-2">İxtisaslar</a>
+                <Link to='/karyera' className="px-2">Karyera testi</Link>
+                <Link to='/ixtisaslar' className="px-2">İxtisaslar</Link>
                 <Link to='/mentorlar' className="px-2">Mentorlar</Link>
-                <Link to='/about' className="px-2">Haqqımızda</Link>
+                <Link to='/haqqımızda' className="px-2">Haqqımızda</Link>
               </nav>
               <div className="header-right flex items-center gap-3">
                 <div className="header-register">
-                  <Link to={"/login"}>
+                  <Link to={"/giriş"}>
                     <button className="border border-solid text-white text-[16px] font-semibold leading-[20.16px] rounded-full mr-3 px-5 py-[10px]">Giriş</button>
                   </Link>
-                  <Link to={"/signup"}>
+                  <Link to={"/qeydiyyat"}>
                     <button className="bg-white text-very-dark-blue text-[16px] font-semibold leading-[20.16px] rounded-full px-5 py-[10px]">Qeydiyyat</button>
                   </Link>
                 </div>

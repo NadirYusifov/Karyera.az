@@ -12,53 +12,114 @@ function QualficitaionsCard() {
     {
       name: "Frontend Developer",
       title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
-      image: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg",
-    },
-    {
+      image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
+  },
+  {
       name: "Backend Developer",
       title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
-      image: "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Full Stack Developer",
-      title: "Həm frontend, həm də backend inkişaf edə bilən proqramçı.",
-      image: "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Mobile Developer",
-      title: "Mobil tətbiq inkişafı ilə məşğuldur.",
-      image: "https://images.unsplash.com/photo-1533906966484-a9c978a3f090?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "DevOps Engineer",
-      title: "İnkişaf və əməliyyat proseslərini birləşdirir.",
-      image: "https://images.unsplash.com/photo-1599949104055-2d04026aee1e?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Data Scientist",
-      title: "Veri analizi və modeləşdirmə ilə məşğuldur.",
-      image: "https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGF0YSUyMHNjaWVudGlzdHxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      name: "QA Engineer",
-      title: "Proqram təminatının keyfiyyətini test edir və təmin edir.",
-      image: "https://images.unsplash.com/photo-1570215170761-f056128eda48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Game Developer",
-      title: "Video oyunları tasarlar ve geliştirir.",
-      image: "https://www.baker.edu/wp-content/uploads/game-developer-degree.jpg",
-    },
-    {
+      image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+  },
+  {
       name: "UI/UX Designer",
       title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
       image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
-    },
-    {
-      name: "Security Engineer",
-      title: "Proqram təminatının təhlükəsizliyini təmin edir.",
-      image: "https://cdn2.hubspot.net/hubfs/3346459/images/blog-images/do-you-have-what-it-takes-to-be-a-senior-security-engineer-at-compuquip.jpg",
-    },
+  },
+  {
+      name: "Frontend Developer",
+      title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
+      image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
+  },
+  {
+      name: "Backend Developer",
+      title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
+      image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+  },
+  {
+      name: "UI/UX Designer",
+      title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
+      image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+  },
+  {
+      name: "Frontend Developer",
+      title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
+      image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
+  },
+  {
+      name: "Backend Developer",
+      title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
+      image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+  },
+  {
+      name: "UI/UX Designer",
+      title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
+      image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+  },
+  {
+      name: "Frontend Developer",
+      title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
+      image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
+  },
+  {
+      name: "Backend Developer",
+      title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
+      image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+  },
+  {
+      name: "UI/UX Designer",
+      title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
+      image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+  },
+  
+    // {
+    //   name: "Frontend Developer",
+    //   title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
+    //   image: "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg",
+    // },
+    // {
+    //   name: "Backend Developer",
+    //   title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
+    //   image: "https://images.unsplash.com/photo-1555952494-efd681c7e3f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // },
+    // {
+    //   name: "Full Stack Developer",
+    //   title: "Həm frontend, həm də backend inkişaf edə bilən proqramçı.",
+    //   image: "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // },
+    // {
+    //   name: "Mobile Developer",
+    //   title: "Mobil tətbiq inkişafı ilə məşğuldur.",
+    //   image: "https://images.unsplash.com/photo-1533906966484-a9c978a3f090?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // },
+    // {
+    //   name: "DevOps Engineer",
+    //   title: "İnkişaf və əməliyyat proseslərini birləşdirir.",
+    //   image: "https://images.unsplash.com/photo-1599949104055-2d04026aee1e?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // },
+    // {
+    //   name: "Data Scientist",
+    //   title: "Veri analizi və modeləşdirmə ilə məşğuldur.",
+    //   image: "https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGF0YSUyMHNjaWVudGlzdHxlbnwwfHwwfHx8MA%3D%3D",
+    // },
+    // {
+    //   name: "QA Engineer",
+    //   title: "Proqram təminatının keyfiyyətini test edir və təmin edir.",
+    //   image: "https://images.unsplash.com/photo-1570215170761-f056128eda48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    // },
+    // {
+    //   name: "Game Developer",
+    //   title: "Video oyunları tasarlar ve geliştirir.",
+    //   image: "https://www.baker.edu/wp-content/uploads/game-developer-degree.jpg",
+    // },
+    // {
+    //   name: "UI/UX Designer",
+    //   title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
+    //   image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+    // },
+    // {
+    //   name: "Security Engineer",
+    //   title: "Proqram təminatının təhlükəsizliyini təmin edir.",
+    //   image: "https://cdn2.hubspot.net/hubfs/3346459/images/blog-images/do-you-have-what-it-takes-to-be-a-senior-security-engineer-at-compuquip.jpg",
+    // },
   ];
 
   var settings = {
@@ -125,15 +186,15 @@ function QualficitaionsCard() {
                       className="h-56 w-full object-cover rounded-3xl"
                     />
                     <div className="p-4 sm:p-6">
-                      <a href="#">
+                      <Link to={`/ixtisaslar/${soft.name}`}>
                         <h3 className="text-[20px] font-medium text-black leading-[25.2px]">
                           {soft.name}
                         </h3>
-                      </a>
+                      </Link>
                       <p className="mt-2 text-[16px] text-gray-500 font-normal line-clamp-2 leading-[20.16px] pt-3">
                         {soft.title}
                       </p>
-                      <Link to="#" className="text-[16px] flex justify-end group mt-4 text-sm font-medium text-dark-cyan leading-[20.16px] pt-8">
+                      <Link to={`/ixtisaslar/${soft.name}`} className="text-[16px] flex justify-end group mt-4 text-sm font-medium text-dark-cyan leading-[20.16px] pt-8">
                         Daha çox
                       </Link>
                     </div>
