@@ -22,9 +22,9 @@ function Footer() {
               <div className="footer-about text-white font-jakarta my-8 lg:my-3">
                 {/* <h3 className="font-semibold pb-5 text-[20px] leading-[20.2px]">Haqqımızda</h3> */}
                 <ul className="w-max text-[18px] lg:flex flex-row justify-center items-center font-medium lg:space-x-8">
-                  <Link to='/about'><li>Haqqımızda</li></Link>
-                  <Link to='/career'><li>Karyera testi</li></Link>
-                  <Link to='/'><li>İxtisaslar</li></Link>
+                  <Link to='/haqqımızda'><li>Haqqımızda</li></Link>
+                  <Link to='/karyera'><li>Karyera testi</li></Link>
+                  <Link to='/ixtisaslar'><li>İxtisaslar</li></Link>
                   <Link to='/mentorlar'><li>Mentorlar</li></Link>
                 </ul>
               </div>

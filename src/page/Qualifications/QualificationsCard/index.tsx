@@ -77,7 +77,7 @@ function QualificationsPageCard() {
                 </div>
             </div>
             <div className='container'>
-                <div className='qualifictions-section-card grid grid-cols-3 font-jakarta relative mb-[110px]'>
+                <div className='qualifictions-section-card grid grid-cols-1 lg:grid-cols-3 font-jakarta relative mb-[110px]'>
                     {softwareDevelopers.map(soft => (
                         <div className='row'>
                             <div className="lg:px-12 mt-10">
