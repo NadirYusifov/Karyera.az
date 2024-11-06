@@ -23,7 +23,7 @@ function HeroSection() {
                   Karyera testi ilə bu günün tələb olunan ixtisaslarını kəşf edin, güclü tərəflərinizi üzə çıxarın və iş dünyasında öz yerinizi tapın.
                 </p>
                 <div className='btn-wrapper relative flex'>
-                  <Link to='/career'>
+                  <Link to='/karyera'>
                     <button className="btn text-[25px] rounded-xl px-10 py-4 mr-10 mb-8 hover:bg-cyan-900 text-white bg-dark-cyan leading-[35px]">Testə keçid edin</button>
                   </Link>
                 </div>

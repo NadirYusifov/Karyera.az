@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 function Login() {
   return (
     <>
-      <section className="login-section w-full h-screen bg-[#143A55] flex items-center font-jakarta">
+      <section className="login-section w-full h-full bg-[#143A55] flex items-center font-jakarta">
         <div className="container flex items-center justify-center">
-          <div className="login-wrapper w-[824px] h-screen md:h-full bg-white rounded-xl px-[109px] py-[90px]">
+          <div className="login-wrapper w-full lg:w-[824px] h-full md:h-full bg-white rounded-xl px-4 lg:px-[109px] py-[65px] my-10">
             <div className="login-header text-[48px] text-center font-medium leading-[60.48px] mb-10">
               <h3>Giriş</h3>
             </div>
@@ -61,7 +61,7 @@ function Login() {
                 </button>
               </div>
               <div className="login-register-link text-center">
-                <p>Hesabınız yoxdur? <Link className="text-very-dark-blue underline" to={"/signup"}>Qeydiyyat</Link></p>
+                <p>Hesabınız yoxdur? <Link className="text-very-dark-blue underline" to={"/qeydiyyat"}>Qeydiyyat</Link></p>
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    axios.post('http://46.101.123.210/api/chatgpt/ask', {"question" : "salam"})
+    axios.post('http://46.101.123.210:8585/api/chatgpt/ask', {"question" : "salam"})
     .then(res => {
       console.log(res.data);
     })
