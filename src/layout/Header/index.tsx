@@ -41,7 +41,9 @@ function Header() {
                 </div>
                 <div className="menu-icon text-[20px] block lg:hidden">
                   <button onClick={() => setMenu(!Menu)}>{Menu ?
-                    <div className="container fixed left-0 top-0 py-4 bg-very-dark-blue w-full">
+                    <div className="fixed left-0 right-0 top-0 py-4 bg-very-dark-blue w-full">
+                      <div className="container">
+
                       <div className="flex justify-end">
                         <AiOutlineClose />
                       </div>
@@ -59,6 +61,7 @@ function Header() {
                         <Link to={"/qeydiyyat"}>
                           <button className="bg-white text-very-dark-blue text-[16px] font-semibold leading-[20.16px] rounded-full px-5 py-[10px]">Qeydiyyat</button>
                         </Link>
+                      </div>
                       </div>
                     </div>
                     : <HiOutlineMenuAlt2 />}
