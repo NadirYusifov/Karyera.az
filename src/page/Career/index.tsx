@@ -186,13 +186,11 @@ const Career = () => {
   };
 
   return (
-    <div className="container_career block lg:flex w-full h-screen font-jakarta">
-      <div className="left-section hidden lg:block h-full px-5 py-3 lg:bg-very-dark-blue">
-        <div className="illustration hidden lg:block">
-          <img className="w-full" src={AnswerImage} alt="Illustration" />
-        </div>
+    <div className="container_career block lg:flex w-full font-jakarta mb-[130px]">
+      <div className="left-section h-screen hidden lg:flex items-center lg:bg-very-dark-blue">
+          <img className="w-full px-24" src={AnswerImage} alt="Illustration" />
       </div>
-      <div className="right-section w-full h-screen p-10 flex flex-col justify-center bg-white">
+      <div className="right-section w-full px-10 flex flex-col justify-center bg-white">
         <div className="container">
           {quizEnded ? (
             <div className="end-message">

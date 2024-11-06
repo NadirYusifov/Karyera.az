@@ -1,9 +1,9 @@
 import Search from "../../../Components/Search"
-import HeroImg from "/public/HeroImg.svg"
+import HeroImg from "/public/HeroImg.png"
 import VectorHeroImg from "/public/Vector.svg"
 import ThreeLine from "/public/GroupLine.svg"
-import EllipseYellow from "/public/EllipseYellow.svg"
-import EllipseBlue from "/public/EllipseBlue.svg"
+// import EllipseYellow from "/public/EllipseYellow.svg"
+// import EllipseBlue from "/public/EllipseBlue.svg"
 import { Link } from "react-router-dom"
 
 function HeroSection() {
@@ -14,7 +14,7 @@ function HeroSection() {
           <Search />
           <div className='hero-section-wrapper'>
             <div className='hero-section-wrapper grid grid-cols-1 space-x-0 lg:space-x-32 xl:grid-cols-2 place-content-center items-center'>
-              <div className='hero-content-text font-jakarta mt-20'>
+              <div className='hero-content-text font-jakarta mt-20 relative'>
                 <h1 className="text-[50px] lg:text-[68px] w-full lg:w-max tracking-thight leading-[60px] font-semibold">Xəyalındakı <span className="text-dark-cyan relative">
                   <img className="absolute top-0 right-0 left-0 -translate-y-8 translate-x-1/4 lg:-translate-y-6 lg:translate-x-2/3" src={ThreeLine} />
                   peşəni
@@ -28,22 +28,22 @@ function HeroSection() {
                   </Link>
                 </div>
               </div>
-              <div className="hero-vector hidden xl:block absolute translate-x-56 translate-y-16">
+              <div className="hero-vector hidden xl:block absolute right-[700px] bottom-16">
                 <img alt="herovector" src={VectorHeroImg} />
               </div>
-              <div className='relative hero-content-img m-0 p-0 hidden xl:block'>
+              <div className=' hero-content-img m-0 p-0 hidden xl:block'>
                 <img
                   alt="heroimg"
                   src={HeroImg}
-                  className="relative z-20" />
-                <img
+                  className="z-20" />
+                {/* <img
                   alt="heroimg"
                   src={EllipseYellow}
                   className="absolute top-0 left-0 right-0 translate-x-40 -translate-y-28" />
                 <img
                   alt="heroimg"
                   src={EllipseBlue}
-                  className="absolute top-0 right-0 left-0 -translate-x-20 translate-y-80" />
+                  className="absolute top-0 right-0 left-0 -translate-x-20 translate-y-80" /> */}
               </div>
             </div>
           </div>

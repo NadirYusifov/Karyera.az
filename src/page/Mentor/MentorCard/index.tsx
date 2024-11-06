@@ -5,6 +5,7 @@ function MentorCard() {
 
     const mentors = [
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -18,6 +19,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -31,6 +33,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -44,6 +47,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -57,6 +61,7 @@ function MentorCard() {
             },
         },
         {
+           id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -70,6 +75,7 @@ function MentorCard() {
             },
         },
         {
+           id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -83,6 +89,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -96,6 +103,7 @@ function MentorCard() {
             },
         },
         {
+           id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -109,6 +117,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -122,6 +131,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -135,6 +145,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -148,6 +159,7 @@ function MentorCard() {
             },
         },
         {
+            id: 1,
             name: "Fatimə Qorxmaz",
             work: "Mobile Developer",
             experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -283,7 +295,7 @@ function MentorCard() {
                             <p>Müxtəlif sahələrdə təcrübəsi olan mentorlarımızla ünsiyyətə keçin və inkişafınıza təkan verin.</p>
                         </div>
                     </div>
-                    <div className="mentors-card-wrapper grid grid-cols-1 place-content-center place-items-center lg:grid-cols-2 xl:grid-cols-3 gap-x-3 font-jakarta">
+                    <div className="mentors-card-wrapper grid grid-cols-1 place-content-center place-items-center lg:grid-cols-2 xl:grid-cols-3 gap-x-3">
                         {mentors.map(mentor => (
                             <div className="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm">
                                 <div className="relative h-40">
@@ -293,7 +305,7 @@ function MentorCard() {
                                     <img className="object-cover w-full h-full" src={mentor.avatar} />
                                 </div>
                                 <div className="mt-16 px-5 text-wrap">
-                                    <Link to={`/mentorlar/${mentor.name}`}>
+                                    <Link to={`/mentor/${mentor.id}`}>
                                         <h1 className="text-[24px] leading-[30.24px] text-center font-semibold">
                                             {mentor.name}
                                         </h1>
