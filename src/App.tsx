@@ -29,16 +29,16 @@ function App() {
     }, 3000)
   }, [])
 
-  useEffect(() => {
-    axios.post('http://46.101.123.210:8585/api/chatgpt/ask', {"question" : "salam"})
-    .then(res => {
-      console.log(res.data);
-    })
-    .catch(error => {
-      console.error('Axios error:', error);
-    });
-  }, []);
-  
+  // useEffect(() => {
+  //   axios.post('http://46.101.123.210:8585/api/chatgpt/ask', {"question" : "salam"})
+  //   .then(res => {
+  //     console.log(res.data);
+  //   })
+  //   .catch(error => {
+  //     console.error('Axios error:', error);
+  //   });
+  // }, []);
+
 
   return (
     <>

@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <>
-      <div className="header-section text-white font-jakarta sticky top-0 z-[99999] bg-very-dark-blue">
+      <div className="header-section text-white font-jakarta sticky top-0 z-[99999] bg-very-dark-blue shadow-xl">
         <div className="container">
           <div className="row">
             <div className="flex justify-between flex-wrap py-4">

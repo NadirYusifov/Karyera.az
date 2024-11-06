@@ -187,10 +187,10 @@ const Career = () => {
 
   return (
     <div className="container_career block lg:flex w-full font-jakarta mb-[130px]">
-      <div className="left-section h-screen hidden lg:flex items-center lg:bg-very-dark-blue">
-          <img className="w-full px-24" src={AnswerImage} alt="Illustration" />
+      <div className="left-section h-screem hidden lg:flex items-center lg:bg-very-dark-blue">
+          <img className="w-full h-full px-24 py-16" src={AnswerImage} alt="Illustration" />
       </div>
-      <div className="right-section w-full px-10 flex flex-col justify-center bg-white">
+      <div className="right-section w-full h-screen px-0 lg:px-10 flex flex-col justify-center bg-white">
         <div className="container">
           {quizEnded ? (
             <div className="end-message">
@@ -199,7 +199,7 @@ const Career = () => {
               <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-[100px] ml-[550px]">Nəticə</button>
             </div>
           ) : (
-            <>
+            <div className="h-full block lg:flex flex-col justify-center">
 
               <div className="progress-bar w-full h-5 bg-[#E0E0E0] rounded-full mb-5">
                 <div
@@ -240,7 +240,7 @@ const Career = () => {
                   </button>
                 )}
               </div>
-            </>
+            </div>
           )}
         </div>
       </div>
