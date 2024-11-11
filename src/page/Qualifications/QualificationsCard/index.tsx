@@ -1,79 +1,90 @@
 import { Link } from "react-router-dom";
 
+import des2 from "/public/des2.jpg"
+import des3 from "/public/des3.jpg"
+import des4 from "/public/des4.jpg"
+import des5 from "/public/des5.jpg"
+import des6 from "/public/des6.jpg"
+import des7 from "/public/des7.jpg"
+import des8 from "/public/des8.jpg"
+import des9 from "/public/des9.jpg"
+import des10 from "/public/des10.jpg"
+import des11 from "/public/des11.jpg"
+import des12 from "/public/des12.jpg"
 function QualificationsPageCard() {
 
     const softwareDevelopers = [
         {
             id: 1,
-            name: "Frontend Developer",
+            name: "UI/UX dizayner",
             title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
-            image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
+            image: des11,
         },
         {
             id: 2,
-            name: "Backend Developer",
-            title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
-            image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+            name: "Kibertəhlükəsizlik analitiki",
+            title: "Təhlükəsizlik pozuntularının qarşısının alınması ilə məşğuldur",
+            image: des2,
         },
         {
             id: 3,
-            name: "UI/UX Designer",
-            title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
-            image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+            name: "Data scientist",
+            title: "Məlumatların təhlili və təqdimi ilə məşğuldur.",
+            image: des3,
         },
         {
-            id: 1,
-            name: "Frontend Developer",
-            title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
-            image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
-        },
-        {
-            id: 2,
+            id: 4,
             name: "Backend Developer",
             title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
-            image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+            image: des4,
         },
         {
-            id: 3,
-            name: "UI/UX Designer",
-            title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
-            image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+            id: 5,
+            name: "Biznes Analitik",
+            title: "Təşkilatların strateji qərarlarını dəstəkləmək üçün məlumatları analiz edən və təşkilati prosesləri optimallaşdırmaq üçün tövsiyələr verən mütəxəssislərdir.",
+            image: des5,
         },
         {
-           id: 1,
-            name: "Frontend Developer",
-            title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
-            image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
+            id: 6,
+            name: "Blokçeyn mühəndisi",
+            title: "blokçeyn texnologiyasına əsaslanan həllərin hazırlanması, tətbiqi və idarə edilməsi ilə məşğul olan mütəxəssisdir.",
+            image: des6,
         },
         {
-            id: 2,
-            name: "Backend Developer",
-            title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
-            image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+            id: 7,
+            name: "Digital marketinq mütəxəssisi",
+            title: "Digital Marketinq mütəxəssisləri bir markanın rəqəmsal mühitdə tanınması, müştəriyə çatması və müştəri əlaqələrinin qurulmasını təmin edən mütəxəssislərdir.",
+            image: des7,
         },
         {
-            id: 3,
-            name: "UI/UX Designer",
-            title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
-            image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+            id: 8,
+            name: "Frontend developer",
+            title: "Frontend Developer bir tətbiq və ya veb səhifənin istifadəçi qarşısında görünən hissəsini hazırlayan və onun istifadəçi təcrübəsini yüksək səviyyədə təmin edən mütəxəssisdir.",
+            image: des8,
         },
         {
-            id: 1,
-            name: "Frontend Developer",
-            title: "İstifadəçi interfeysi dizaynı və inkişafı ilə məşğuldur.",
-            image: "https://s3-alpha-sig.figma.com/img/9907/a69a/3ba390729c50650e3f02d181644d8e01?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=asfRbVRM16oYNYZz8lB~mKd4WsDXqJWEfk7JGQ2d1nXmGxeb-qSnUu~vHSZX7GWagfLRxih3ZrXs9oDCePLAYEJ5xa4h5dkiCn8R7mWdYu0fOMCSBeGo3OFIaCvlQAocYQQpm609DlXyZGGHWSljMyD1G1VxngOd7ddihx0mTCSMuikndmJE~-FZL7nlDjzt14~wnKvARe5kfHrktNV1UkQFZ4T4I8Ocq1ekf1WtrXa6wPyWnrwAThiBY3CSfBWx1GMPIf~Qv8lKmK0FMQbUyOlCfw0fcZdMEjFtWQJVG7VHqEkUpwqWZ7qh110mv7jirJybwg5GTjj4Pg7t3xgAUg__",
+            id: 9,
+            name: "Məhsul Sahibi",
+            title: "Product Owner (Məhsul Sahibi) layihə komandasında müştəri tələblərini, bazar ehtiyaclarını və biznes məqsədlərini təmsil edən əsas şəxslərdən biridir.",
+            image: des9,
         },
         {
-            id: 2,
-            name: "Backend Developer",
-            title: "Server tərəfi tətbiqləri və verilənlər bazaları ilə işləyir.",
-            image: "https://s3-alpha-sig.figma.com/img/dee5/579a/d6a359121776093c9475783547e983b1?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ecB3beoJMjSsOvtFliCMbNoE70jYrz7fnslQMom8mpW5THtyk-NY-guhzvV52We2LyJcknEfp0gehRYqJTEeYtD6uYvWE2kGU8BTl~c9~sSFPZXE-WM8gDhIdMW0ANdjJa5JmGJpfX-HJfDxmK0JenFaTueRao-5MPgJi9qvSgMH4AZsIGDF~0zMfoYM-JOIz0yYeHwcglPtOBNQMezx4u~ntHPlH-Vcl77g6f7FEcL7ruL190ONb01lhL~27dftqEhBq2PAumgZqC7unh7WDslvDhjaCF41WIb-0lX~tv5yP9zpNKWs9TsFeFdW95x4tUK5bWH3VUCfIlAsPdM7sA__",
+            id: 10,
+            name: "QA mühəndisi",
+            title: "Keyfiyyətə nəzarət (Quality Assurance - QA) mühəndisləri proqram təminatının və ya məhsulun müəyyən olunan tələblərə uyğun və yüksək keyfiyyətdə işləməsini təmin edən mütəxəssislərdir.",
+            image: des10,
         },
         {
-            id: 3,
-            name: "UI/UX Designer",
-            title: "İstifadəçi təcrübəsi və interfeys dizaynı ilə məşğuldur.",
-            image: "https://wp.globaluniversitysystems.com/ue/wp-content/uploads/sites/9/2021/12/uxuidesign_erina-baftiroska_2800x1200px.png?w=1380&h=776&crop=1",
+            id: 11,
+            name: "Sosial media meneceri",
+            title: "Sosial Media Menecerləri, şirkətlərin və markaların sosial mediada tanıtmaq, izləyicilərlə əlaqə qurmaq və onların markayla bağlı müsbət təəssürat yaratmasını təmin etmək üçün çalışan mütəxəssislərdir.",
+            image: des11,
+        },
+        {
+            id: 12,
+            name: "Portfolio analitik",
+            title: "Portfolio Analitik (Portfolio Analyst), investisiya portfellərinin performansını təhlil edən, riskləri idarə edən və optimallaşdırma strategiyaları hazırlayan mütəxəssisdir.",
+            image: des12,
         },
     ];
 
@@ -89,15 +100,15 @@ function QualificationsPageCard() {
                 </div>
             </div>
             <div className='container'>
-                <div className='qualifictions-section-card grid grid-cols-1 lg:grid-cols-3 font-jakarta relative mb-[110px]'>
+                <div className='qualifictions-section-card grid grid-cols-1 lg:grid-cols-3 font-jakarta relative mb-[110px] gap-x-3'>
                     {softwareDevelopers.map(soft => (
                         <div className='row'>
-                            <div className="lg:px-12 mt-10">
-                                <article className="overflow-hidden px-[22px] py-4 rounded-3xl border border-gray-100 bg-white shadow-lg">
+                            <div className="lg:px-6 mt-10">
+                                <article className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg">
                                     <img
                                         alt="softwareimg"
                                         src={soft.image}
-                                        className="h-56 w-full object-cover rounded-3xl"
+                                        className="h-56 w-full py-2 px-2 object-cover rounded-3xl"
                                     />
                                     <div className="p-4 sm:p-6">
                                         <Link to={`/ixtisas/${soft.id}`}>
@@ -108,7 +119,7 @@ function QualificationsPageCard() {
                                         <p className="mt-2 text-[16px] text-gray-500 font-normal line-clamp-2 leading-[20.16px] pt-3">
                                             {soft.title}
                                         </p>
-                                        <Link to={`/ixtisas/${soft.name}`} className="text-[16px] flex justify-end group mt-4 text-sm font-medium text-dark-cyan leading-[20.16px] pt-8">
+                                        <Link to={`/ixtisas/${soft.id}`} className="text-[16px] flex justify-end group mt-4 text-sm font-medium text-dark-cyan leading-[20.16px] pt-8">
                                             Daha çox
                                         </Link>
                                     </div>

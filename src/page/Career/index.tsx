@@ -156,6 +156,22 @@ const questions = [
   }
 ]
 
+// const motivationalQuotes = [
+//   {
+//     "id": 10,
+//     "title": "test 1"
+//   },
+//   {
+//     "id": 20,
+//     "title": "test 2"
+//   },
+//   {
+//     "id": 30,
+//     "title": "test 3"
+//   },
+
+// ]
+
 
 const Career = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -171,6 +187,13 @@ const Career = () => {
     }
   };
 
+  // const handleNextClick = () => {
+  //   if (currentQuestion > 0) {
+  //     setCurrentQuestion(currentQuestion + 1);
+  //     setSelectedOption(null);
+  //   }
+  // };
+
   const handleOptionClick = (opt: string) => {
     setSelectedOption(opt);
     if (currentQuestion < questions.length - 1) {
@@ -185,33 +208,53 @@ const Career = () => {
     }
   };
 
+  // const motivationOptional = () => {
+  //   const quote = motivationalQuotes.find(q => q.id === Math.floor(currentQuestion + 1))
+
+  //   if (quote) {
+  //     return (
+  //       <div className="motivational-quote  my-5">
+  //         <p className="text-xl text-[#1D4F91]">{quote.title}</p>
+  //         <button onClick={handleNextClick}>A</button>
+  //       </div>
+  //     );
+  //   }
+  //   return null
+  // }
+
   return (
-    <div className="container_career block lg:flex w-full font-jakarta mb-[130px]">
-      <div className="left-section h-screem hidden lg:flex items-center lg:bg-very-dark-blue">
-          <img className="w-full h-full px-24 py-16" src={AnswerImage} alt="Illustration" />
+    <div className="container_career block lg:flex w-full mb-[130px]">
+      <div className="left-section hidden lg:flex items-center lg:bg-very-dark-blue">
+        <img className="w-full h-full px-24 py-16" src={AnswerImage} alt="Illustration" />
       </div>
-      <div className="right-section w-full h-screen px-0 lg:px-10 flex flex-col justify-center bg-white">
+      <div className="right-section w-full h-screen px-0 lg:px-10 flex flex-col flex-wrap justify-center bg-white">
         <div className="container">
+
           {quizEnded ? (
             <div className="end-message">
               <h2 className="endm text-very-dark-blue text-[84px] text-center font-semibold">Təbriklər!</h2>
               <p className="endp text-center text-[#2F78AA] text-[32px] leading-[60px]"> İndi sizə ən uyğun karyera sahələrini təqdim edirik!</p>
-              <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-[100px] ml-[550px]">Nəticə</button>
+              <div className="flex justify-center lg:justify-end">
+                <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-10">Nəticə</button>
+              </div>
             </div>
           ) : (
             <div className="h-full block lg:flex flex-col justify-center">
-
-              <div className="progress-bar w-full h-5 bg-[#E0E0E0] rounded-full mb-5">
+              {/* {motivationOptional()} */}
+              {/* <div className="progress-bar w-full h-5 bg-[#E0E0E0] rounded-full mb-5">
                 <div
                   className="progress-bar-fill h-full bg-[#1D4F91] rounded-full transition all ease-in-out"
                   style={{ width: `${progress}%` }}
-                ></div>
+                  ></div>
+                  {motivationOptional()}
               </div>
-
               <div className="question-header">
                 <h2 className="text-[23px]">{`${currentQuestion + 1}/${questions.length}`}</h2>
                 <p className="text-[23px] lg:text-[32px] my-5 font-medium">{questions[currentQuestion].question}</p>
               </div>
+
+              
+
 
               <div className="options flex flex-col">
                 {questions[currentQuestion].options.map((option, index) => (
@@ -227,9 +270,47 @@ const Career = () => {
                     {option}
                   </label>
                 ))}
+              </div> */}
+
+              {/* {motivationalQuotes && currentQuestion && ( */}
+              {/* Progress bar */}
+              <div className="progress-bar w-full h-5 bg-[#E0E0E0] rounded-full mb-5">
+                <div
+                  className="progress-bar-fill h-full bg-[#1D4F91] rounded-full transition all ease-in-out"
+                  style={{ width: `${progress}%` }}
+                ></div>
               </div>
 
-              <div className="navigation flex justify-end mt-[10px]  mb-0 ">
+              {/* Question header */}
+              <div className="question-header">
+                <h2 className="text-[23px]">{`${currentQuestion + 1}/${questions.length}`}</h2>
+                <p className="text-[23px] lg:text-[32px] my-5 font-medium">
+                  {questions[currentQuestion].question}
+                </p>
+              </div>
+
+              {/* Options */}
+              <div className="options flex flex-col">
+                {questions[currentQuestion].options.map((option, optionIndex) => (
+                  <label
+                    key={optionIndex}
+                    className={`option ${selectedOption === option ? "selected" : ""} flex items-center w-full h-full rounded-full border-solid border border-very-dark-blue pl-[35px] py-3 mb-[10px] text-[18px] lg:[20px] cursor-pointer bg-white text-[#242424] text-left hover:bg-very-dark-blue hover:text-white`}
+                  >
+                    <input
+                      type="radio"
+                      name="options"
+                      value={option}
+                      checked={selectedOption === option}
+                      onChange={() => handleOptionClick(option)}
+                      style={{ display: "none" }}
+                    />
+                    {option}
+                  </label>
+                ))}
+              </div>
+
+
+              <div className="navigation flex justify-end mt-[10px] mb-0 ">
                 {currentQuestion === 0 ? (
                   <Link to='/'>
                     <h4>Ana səhifə</h4>
@@ -241,6 +322,7 @@ const Career = () => {
                 )}
               </div>
             </div>
+
           )}
         </div>
       </div>

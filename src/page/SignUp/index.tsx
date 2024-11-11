@@ -3,27 +3,34 @@ import { Link } from "react-router-dom"
 function SignUp() {
   return (
     <>
-      <section className="login-section w-full h-full bg-[#143A55] flex items-center font-jakarta">
+      <section className="signup-section w-full h-full bg-[#143A55] flex items-center font-jakarta">
         <div className="container flex items-center justify-center">
-          <div className="login-wrapper w-[824px] h-full bg-white rounded-xl px-4 lg:px-[109px] py-[65px] my-10">
-            <div className="login-header text-[48px] text-center font-medium leading-[60.48px] mb-10">
+          <div className="signup-wrapper w-[824px] h-full bg-white rounded-xl px-4 lg:px-[109px] py-[65px] my-10">
+            <div className="signup-header text-[48px] text-center font-medium leading-[60.48px] mb-10">
               <h3>Qeydiyyat</h3>
             </div>
-            <div className="login-input mb-10">
-              <form className="flex flex-col">
-                <input className="w-full text-[18px] px-10 py-2 outline-none border rounded-xl mb-4" placeholder="Adınız" required />
-                <div className="login-mail flex items-center relative">
-                  <input className="w-full text-[18px] px-10 py-2 outline-none border rounded-xl mb-4" placeholder="Epoçt" required />
-                  <div className="login-mail-icon absolute top-3 left-0 ml-2">
+            <div className="signup-input mb-10">
+              <form className="flex flex-col relative">
+                <div className="signup-name flex items-center relative">
+                  <input className="w-full text-[18px] px-14 py-2 outline-none border border-very-dark-grayish-red rounded-xl mb-6" placeholder="Adınız" required />
+                </div>
+                <div className="singup-name-icon absolute top-3 ml-2 px-5">
+                  <svg width="25" height="25" viewBox="0 0 32 32" fill="none" >
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 9.33333C10.6667 7.91885 11.2286 6.56229 12.2288 5.5621C13.229 4.5619 14.5855 4 16 4C17.4145 4 18.771 4.5619 19.7712 5.5621C20.7714 6.56229 21.3333 7.91885 21.3333 9.33333C21.3333 10.7478 20.7714 12.1044 19.7712 13.1046C18.771 14.1048 17.4145 14.6667 16 14.6667C14.5855 14.6667 13.229 14.1048 12.2288 13.1046C11.2286 12.1044 10.6667 10.7478 10.6667 9.33333ZM10.6667 17.3333C8.89856 17.3333 7.20286 18.0357 5.95262 19.286C4.70238 20.5362 4 22.2319 4 24C4 25.0609 4.42143 26.0783 5.17157 26.8284C5.92172 27.5786 6.93913 28 8 28H24C25.0609 28 26.0783 27.5786 26.8284 26.8284C27.5786 26.0783 28 25.0609 28 24C28 22.2319 27.2976 20.5362 26.0474 19.286C24.7971 18.0357 23.1014 17.3333 21.3333 17.3333H10.6667Z" fill="#4E4D4D" />
+                  </svg>
+                </div>
+                <div className="signup-mail flex items-center relative">
+                  <input className="w-full text-[18px] px-14 py-2 outline-none border border-very-dark-grayish-red rounded-xl" placeholder="Epoçt" required />
+                  <div className="signup-mail-icon absolute top-3 left-0 ml-2 px-5">
                     <svg width="25" height="25" viewBox="0 0 32 32">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22966 6.89592C2.66699 8.45725 2.66699 10.9719 2.66699 15.9999C2.66699 21.0279 2.66699 23.5426 4.22966 25.1039C5.79233 26.6653 8.30566 26.6666 13.3337 26.6666H18.667C23.695 26.6666 26.2097 26.6666 27.771 25.1039C29.3323 23.5413 29.3337 21.0279 29.3337 15.9999C29.3337 10.9719 29.3337 8.45725 27.771 6.89592C26.2083 5.33459 23.695 5.33325 18.667 5.33325H13.3337C8.30566 5.33325 5.79099 5.33325 4.22966 6.89592ZM24.7683 10.0266C24.938 10.2303 25.0198 10.4931 24.9958 10.7571C24.9718 11.0211 24.8439 11.2648 24.6403 11.4346L21.7123 13.8746C20.5297 14.8613 19.5723 15.6586 18.7257 16.2026C17.8457 16.7693 16.9883 17.1266 16.0003 17.1266C15.0123 17.1266 14.155 16.7679 13.2737 16.2026C12.4283 15.6586 11.471 14.8599 10.2883 13.8759L7.36033 11.4359C7.15646 11.2662 7.02838 11.0224 7.00425 10.7582C6.98012 10.4941 7.06192 10.2311 7.23166 10.0273C7.4014 9.82339 7.64517 9.6953 7.90934 9.67117C8.17352 9.64704 8.43646 9.72885 8.64033 9.89859L11.5203 12.2973C12.7643 13.3333 13.627 14.0506 14.3577 14.5199C15.063 14.9733 15.5417 15.1266 16.0017 15.1266C16.4617 15.1266 16.9403 14.9746 17.6457 14.5199C18.375 14.0506 19.239 13.3333 20.483 12.2973L23.3617 9.89725C23.5655 9.72774 23.8284 9.64614 24.0924 9.6704C24.3565 9.69465 24.5987 9.82277 24.7683 10.0266Z" fill="#4E4D4D" />
                     </svg>
                     <p className="sr-only">Mail</p>
                   </div>
                 </div>
-                <div className="login-password flex items-center relative">
-                  <input className="w-full text-[18px] px-10 py-2 outline-none border rounded-xl mt-4" placeholder="Şifrənizi daxil edin" required />
-                  <div className="login-password-icon absolute bottom-3 left-0 ml-2">
+                <div className="signup-password flex items-center relative">
+                  <input className="w-full text-[18px] px-14 py-2 outline-none border border-very-dark-grayish-red rounded-xl mt-6" placeholder="Şifrənizi daxil edin" required />
+                  <div className="signup-password-icon absolute bottom-3 left-0 ml-2 px-5">
                     <svg width="25" height="25" viewBox="0 0 32 32">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00033 13.4067V10.6667C7.00033 8.2798 7.94854 5.99061 9.63636 4.30279C11.3242 2.61496 13.6134 1.66675 16.0003 1.66675C18.3873 1.66675 20.6765 2.61496 22.3643 4.30279C24.0521 5.99061 25.0003 8.2798 25.0003 10.6667V13.4067C26.487 13.5174 27.4537 13.7974 28.1617 14.5054C29.3337 15.6761 29.3337 17.5627 29.3337 21.3334C29.3337 25.1041 29.3337 26.9907 28.1617 28.1614C26.991 29.3334 25.1043 29.3334 21.3337 29.3334H10.667C6.89633 29.3334 5.00966 29.3334 3.83899 28.1614C2.66699 26.9907 2.66699 25.1041 2.66699 21.3334C2.66699 17.5627 2.66699 15.6761 3.83899 14.5054C4.54566 13.7974 5.51366 13.5174 7.00033 13.4067ZM9.00033 10.6667C9.00033 8.81023 9.73782 7.02975 11.0506 5.717C12.3633 4.40425 14.1438 3.66675 16.0003 3.66675C17.8568 3.66675 19.6373 4.40425 20.9501 5.717C22.2628 7.02975 23.0003 8.81023 23.0003 10.6667V13.3387C22.4901 13.3343 21.9345 13.3325 21.3337 13.3334H10.667C10.0652 13.3325 9.50966 13.3343 9.00033 13.3387V10.6667Z" fill="#4E4D4D" />
                     </svg>
@@ -35,11 +42,11 @@ function SignUp() {
               </form>
             </div>
             <hr />
-            <div className="login-social-other mt-6">
-              <div className="login-social-media-text text-[16px] leading-[16px] font-medium text-center">
+            <div className="signup-social-other mt-6">
+              <div className="signup-social-media-text text-[16px] leading-[16px] font-medium text-center">
                 <p>Və ya aşağıdakılar ilə davam et.</p>
               </div>
-              <div className="login-social-media-button flex flex-row justify-center items-center gap-6 my-7">
+              <div className="signup-social-media-button flex flex-row justify-center items-center gap-6 my-7">
                 <button className="border p-3 rounded-xl shadow-lg shadow-sky-300/20">
                   <svg className="size-6" width="48" height="48" viewBox="0 0 48 48">
                     <path fill="#fbc02d" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" /><path fill="#e53935" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" /><path fill="#4caf50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1565c0" d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
@@ -61,7 +68,7 @@ function SignUp() {
                   </svg>
                 </button>
               </div>
-              <div className="login-register-link text-center">
+              <div className="signup-register-link text-center">
                 <p>Hesabınız var? <Link className="text-very-dark-blue underline" to={"/giriş"}>Giriş</Link></p>
               </div>
             </div>

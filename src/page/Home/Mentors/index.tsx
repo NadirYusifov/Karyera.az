@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const mentors = [
 
   {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -14,12 +15,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -27,12 +29,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -40,12 +43,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -53,12 +57,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -66,12 +71,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -79,12 +85,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -92,12 +99,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -105,12 +113,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -118,12 +127,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -131,12 +141,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -144,12 +155,13 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
-{
+  },
+  {
+    id: 1,
     name: "Fatimə Qorxmaz",
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
@@ -157,11 +169,11 @@ const mentors = [
     avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
     thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
     sosyalMedya: {
-        facebook: "https://facebook.com/",
-        instagram: "https://instagram.com/",
-        linkedin: "https://linkedin.com/in/",
+      facebook: "https://facebook.com/",
+      instagram: "https://instagram.com/",
+      linkedin: "https://linkedin.com/in/",
     },
-},
+  },
 
   // {
   //   name: "Əli Veliyev",
@@ -346,9 +358,11 @@ function MentorsCard() {
                     <img className="object-cover w-full h-full" src={mentor.avatar} />
                   </div>
                   <div className="mt-16 px-5 text-wrap">
+                    <Link to={'/mentor/id'}>
                     <h1 className="text-lg text-center font-semibold">
                       {mentor.name}
                     </h1>
+                    </Link>
                     <p className="text-dark-moderate-cyan text-[18px] text-center font-normal leading-[20.16px] mb-6 my-2">{mentor.work}</p>
                     <hr />
                     <div className="social-media flex justify-center items-center mt-3 space-x-4 text-[20px] text-white">

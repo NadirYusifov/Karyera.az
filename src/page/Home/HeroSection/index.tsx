@@ -22,14 +22,14 @@ function HeroSection() {
                 <p className="py-0 md:py-6 text-[24px] text-very-dark-grayish-red font-medium -tracking-tight text-left leading-10 mt-5 mb-7">
                   Karyera testi ilə bu günün tələb olunan ixtisaslarını kəşf edin, güclü tərəflərinizi üzə çıxarın və iş dünyasında öz yerinizi tapın.
                 </p>
-                <div className='btn-wrapper relative flex'>
-                  <Link to='/karyera'>
-                    <button className="btn text-[20px] lg:text-[25px] rounded-xl px-10 py-4 mr-10 mb-8 hover:bg-cyan-900 text-white bg-dark-cyan leading-[35px]">Testə keçid edin</button>
+                <div className='btn-wrapper relative'>
+                  <Link className="relative" to='/karyera'>
+                    <button className="relative btn text-[20px] lg:text-[25px] rounded-xl px-10 py-4 mr-10 mb-8 hover:bg-cyan-900 text-white bg-dark-cyan leading-[35px]">Testə keçid edin</button>
                   </Link>
                 </div>
-              </div>
-              <div className="hero-vector hidden xl:block absolute right-[700px] bottom-16">
+              <div className="hero-vector hidden xl:block absolute bottom-10 right-0">
                 <img alt="herovector" src={VectorHeroImg} />
+              </div>
               </div>
               <div className=' hero-content-img m-0 p-0 hidden xl:block'>
                 <img

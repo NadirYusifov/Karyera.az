@@ -16,6 +16,7 @@ export default {
         "dark-grayish-red": "#817D7D",
         "dark-moderate-cyan": "#4A91A7",
         "dark-cyan": "#226478",
+        "dark-silver": "#707070",
         "mostly-desaturated-dark-cyan": "#53808C",
         "mostly-black": "#242424"
       },

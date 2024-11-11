@@ -12,7 +12,7 @@ import About from "./page/About"
 import SignUp from "./page/SignUp"
 import ScrollTopPage from "./lib/scrolltopage/ScrollTopPage"
 import QualificationsPage from "./page/Qualifications"
-import axios from "axios"
+// import axios from "axios"
 import MentorDetail from "./page/Mentor/MentorDetail"
 import QualificationsDetail from "./page/Qualifications/QualficicationsDetail"
 
@@ -29,15 +29,24 @@ function App() {
     }, 3000)
   }, [])
 
-  useEffect(() => {
-    axios.post('http://46.101.123.210:8585/api/chatgpt/ask', {"question" : "salam"})
-    .then(res => {
-      console.log(res.data);
-    })
-    .catch(error => {
-      console.error('Axios error:', error);
-    });
-  }, []);
+  // useEffect(() => {
+  //   const fetchChatGptResponse = async () => {
+
+
+  //     try {
+  //       const res = await axios.post('http://46.101.123.210/api/chatgpt/ask', {
+
+  //       });
+
+  //       console.log(res.data);
+
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+
+  //   fetchChatGptResponse();
+  // }, []);
 
 
   return (
