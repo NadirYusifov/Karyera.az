@@ -1,3 +1,4 @@
+import avatarimg from "/public/Avatarİmage.png"
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,8 +13,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -26,8 +27,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -40,8 +41,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -54,8 +55,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -68,8 +69,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -82,8 +83,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -96,8 +97,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -110,8 +111,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -124,8 +125,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -138,8 +139,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -152,8 +153,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -166,8 +167,8 @@ const mentors = [
     work: "Mobile Developer",
     experience: "10 ildən artıq frontend inkişaf təcrübəsinə malikdir.",
     email: "ali.veli@example.com",
-    avatar: "https://s3-alpha-sig.figma.com/img/c1ad/ec45/aa1651f30eb529196ec5a2452b973b31?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aigQNm3Hn9~kbYAdKR09cAYPi9dp8G27mpUONUEC4~h5EhvwjiDwzyer~aEwmEIjiWxs068qEA~a7AvmfHKpcGkxyA5PqQd7ry2nmPnldlHPl1kahCBLCHUT8GPPYJy64JEOyojNecTgIAI8t-jhrMy50waiocC~C-Hj2QQ3lNWLYLhlLGckdWt0xc4Vj9jkwMzwM0hXhBgVv15C2MsVHg4Pl3ImxfDKnueaDJ6nTDy2F6H~w0w0hQybirfEZXGDQZOYg23VXy-gh4O18ZslejB9eVA28Q9qYwm843XPiwmFyfOP1GLGk0qAOFTdzmc995fSmvJ8-yqTrXNc6bgViw__",
-    thumbnail: "https://s3-alpha-sig.figma.com/img/55c6/c220/36811b1f7b3c2ce78738f71fef5f312b?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QJ9cnjeoLyn8S48zXGujJWzH7axNBXm8YCq1tt25blIOao93ak4frJmuAbJoHZ4R2se4wTstopxnwbzRDdwIj6Bx0bOXaXm-2qUxhYs9GgViOmS7ooudqhQ6eN0rFAOTIv~FTrr7OkIgwyboQ-5EVrLjyilR1R0NNDsLc4zw23pGypvLl8ITFSQ7TxfCo-pl2A2CJq0AVfz1hmfLyQB1qJ4Wm8jJ5U6yDsG~NekKWHeNGLWY4erIj3E2jAMki4RoScRdlJvzTV7vW6BZNB7OIh6mT3mPxOr43YcNwNyFiARO-6tFQXyYwVoOYAlyygn8NzxWZs4GAyk1somxhsHUCA__",
+    avatar: avatarimg,
+    thumbnail: "https://as2.ftcdn.net/v2/jpg/04/57/57/27/1000_F_457572773_4PomERmDXbw7P8btVr58KwC3jPKCWwXo.jpg",
     sosyalMedya: {
       facebook: "https://facebook.com/",
       instagram: "https://instagram.com/",
@@ -352,9 +353,9 @@ function MentorsCard() {
               <div className="mentors-card-wraper px-1">
                 <div className="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-2xl shadow-sm">
                   <div className="relative h-40">
-                    <img className="absolute h-full w-full object-cover" src={mentor.thumbnail} />
+                    <img className="absolute h-full w-full" src={mentor.thumbnail} />
                   </div>
-                  <div className="relative shadow mx-auto h-28 w-28 -my-12 border-white rounded-full overflow-hidden border-4">
+                  <div className="relative mx-auto h-28 w-28 -my-12 rounded-full overflow-hidden">
                     <img className="object-cover w-full h-full" src={mentor.avatar} />
                   </div>
                   <div className="mt-16 px-5 text-wrap">

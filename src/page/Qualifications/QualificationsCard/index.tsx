@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import des2 from "/public/des2.jpg"
 import des3 from "/public/des3.jpg"
 import des4 from "/public/des4.jpg"

@@ -30,22 +30,15 @@ function App() {
   }, [])
 
   // useEffect(() => {
-  //   const fetchChatGptResponse = async () => {
-
-
-  //     try {
-  //       const res = await axios.post('http://46.101.123.210/api/chatgpt/ask', {
-
-  //       });
-
-  //       console.log(res.data);
-
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-
-  //   fetchChatGptResponse();
+  //   axios.post("http://46.101.123.210:8585/api/chatgpt/ask")
+  //     .then(res => {
+  //       // Yanıtı konsola yazdırma
+  //       console.log(res.data); // 'data' axios ile dönen yanıtın ana içeriğidir.
+  //     })
+  //     .catch(err => {
+  //       // Hata yönetimi
+  //       console.error("Hata oluştu:", err);
+  //     });
   // }, []);
 
 
