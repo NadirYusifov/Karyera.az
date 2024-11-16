@@ -15,6 +15,7 @@ import QualificationsPage from "./page/Qualifications"
 // import axios from "axios"
 import MentorDetail from "./page/Mentor/MentorDetail"
 import QualificationsDetail from "./page/Qualifications/QualficicationsDetail"
+import NotFound from "./page/NotFound"
 
 function App() {
   // const location = useLocation()
@@ -51,7 +52,6 @@ function App() {
           {/* <Routes>
             <Route path="/login" element={<Login />} />
           </Routes> */}
-
           <Header />
           {/* {!isLoginPageShow && !isCareerPageShow && <Header />} */}
           <ScrollTopPage />
@@ -65,6 +65,7 @@ function App() {
             <Route path="/ixtisaslar" element={<QualificationsPage />} />
             <Route path="/ixtisas/:id" element={<QualificationsDetail />} />
             <Route path="/haqqımızda" element={<About />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
           <ContactMe />
           <Footer />
