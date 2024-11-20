@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { Card, CardActionArea } from "@mui/material";
 
 const mentors = [
 
@@ -339,7 +340,6 @@ function MentorsCard() {
 
   return (
     <>
-
       <div className="mentors-card bg-dark-moderate-cyan my-[110px] font-jakarta">
         <div className="mentors-card-header text-center pt-7">
           <Link to='/mentorlar'>
@@ -351,29 +351,30 @@ function MentorsCard() {
           <Slider {...settings}>
             {mentors.map(mentor => (
               <div className="mentors-card-wraper px-1">
-                <div className="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-2xl shadow-sm">
-                  <div className="relative h-40">
-                    <img className="absolute h-full w-full" src={mentor.thumbnail} />
-                  </div>
-                  <div className="relative mx-auto h-28 w-28 -my-12 rounded-full overflow-hidden">
-                    <img className="object-cover w-full h-full" src={mentor.avatar} />
-                  </div>
-                  <div className="mt-16 px-5 text-wrap">
-                    <Link to={'/mentor/id'}>
-                    <h1 className="text-lg text-center font-semibold">
-                      {mentor.name}
-                    </h1>
-                    </Link>
-                    <p className="text-dark-moderate-cyan text-[18px] text-center font-normal leading-[20.16px] mb-6 my-2">{mentor.work}</p>
-                    <hr />
-                    <div className="social-media flex justify-center items-center mt-3 space-x-4 text-[20px] text-white">
-                      {mentor.sosyalMedya.facebook && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.facebook.com/"><FaFacebook /></a>}
-                      {mentor.sosyalMedya.linkedin && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.linkedin.com/"><FaLinkedin /></a>}
-                      {mentor.sosyalMedya.instagram && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.instagram.com/"><span className="sr-only">{mentor.sosyalMedya.facebook}</span><FaInstagram /></a>}
-                    </div>
-                  </div>
-
-                </div>
+                <Link to={'/mentor/id'}>
+                  <Card className="!my-12 !w-full !justify-center !items-center !overflow-hidden !md:max-w-sm !rounded-2xl !shadow-sm">
+                    <CardActionArea>
+                      <div className="relative h-40">
+                        <img className="absolute h-full w-full" src={mentor.thumbnail} />
+                      </div>
+                      <div className="relative mx-auto h-28 w-28 -my-12 rounded-full overflow-hidden">
+                        <img className="object-cover w-full h-full" src={mentor.avatar} />
+                      </div>
+                      <div className="mt-16 px-5 text-wrap">
+                        <h1 className="text-lg text-center font-semibold">
+                          {mentor.name}
+                        </h1>
+                        <p className="text-dark-moderate-cyan text-[18px] text-center font-normal leading-[20.16px] mb-6 my-2">{mentor.work}</p>
+                        <hr />
+                        <div className="social-media flex justify-center items-center mt-3 pb-6 space-x-4 text-[20px] text-white">
+                          {mentor.sosyalMedya.facebook && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.facebook.com/"><FaFacebook /></a>}
+                          {mentor.sosyalMedya.linkedin && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.linkedin.com/"><FaLinkedin /></a>}
+                          {mentor.sosyalMedya.instagram && <a className="bg-very-dark-blue px-2 py-2 rounded-full" target="blank" href="https://www.instagram.com/"><span className="sr-only">{mentor.sosyalMedya.facebook}</span><FaInstagram /></a>}
+                        </div>
+                      </div>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </div>
             ))}
           </Slider>

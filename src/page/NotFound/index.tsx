@@ -1,7 +1,36 @@
 import { Button } from "@mui/material"
+// import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
 function NotFound() {
+    // const [response, setResponse] = useState(null);
+    // useEffect(() => {
+    //   const fetchChatGPTResponse = async () => {
+    //     const apiKey = import.meta.env.VITE_CHATGPT_API_KEY; // Çevresel değişkeni alma
+    //     const url = "https://api.openai.com/v1/completions";
+  
+    //     const headers = {
+    //       "Authorization": `Bearer ${apiKey}`,
+    //       "Content-Type": "application/json"
+    //     };
+  
+    //     const body = JSON.stringify({
+    //       model: "gpt-4",  // ChatGPT modelini belirtin
+    //       prompt: "Merhaba, dünya!",  // Gönderilecek metin
+    //       max_tokens: 100
+    //     });
+  
+    //     try {
+    //       const response = await fetch(url, { method: "POST", headers, body });
+    //       const data = await response.json();
+    //       setResponse(data);
+    //     } catch (error) {
+    //       console.error("Hata:", error);
+    //     }
+    //   };
+  
+    //   fetchChatGPTResponse();
+    // }, []);
     return (
         <>
             <section className="not-found-section">
@@ -26,6 +55,15 @@ function NotFound() {
                                     Əsas səhifəyə geri dön
                                 </Button>
                             </Link>
+
+    {/* <div>
+      {response ? (
+        <pre>{JSON.stringify(response, null, 2)}</pre>
+      ) : (
+        <p>Yükleniyor...</p>
+      )}
+    </div> */}
+
                         </div>
                     </div>
                 </div>

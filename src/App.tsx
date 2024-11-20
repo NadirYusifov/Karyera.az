@@ -12,7 +12,7 @@ import About from "./page/About"
 import SignUp from "./page/SignUp"
 import ScrollTopPage from "./lib/scrolltopage/ScrollTopPage"
 import QualificationsPage from "./page/Qualifications"
-// import axios from "axios"
+import axios from "axios"
 import MentorDetail from "./page/Mentor/MentorDetail"
 import QualificationsDetail from "./page/Qualifications/QualficicationsDetail"
 import NotFound from "./page/NotFound"
@@ -30,17 +30,17 @@ function App() {
     }, 3000)
   }, [])
 
-  // useEffect(() => {
-  //   axios.post("http://46.101.123.210:8585/api/chatgpt/ask")
-  //     .then(res => {
-  //       // Yanıtı konsola yazdırma
-  //       console.log(res.data); // 'data' axios ile dönen yanıtın ana içeriğidir.
-  //     })
-  //     .catch(err => {
-  //       // Hata yönetimi
-  //       console.error("Hata oluştu:", err);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios.post("http://46.101.123.210/api/chatgpt/ask")
+      .then(res => {
+        // Yanıtı konsola yazdırma
+        console.log(res.data); // 'data' axios ile dönen yanıtın ana içeriğidir.
+      })
+      .catch(err => {
+        // Hata yönetimi
+        console.error("Hata oluştu:", err);
+      });
+  }, []);
 
 
   return (
