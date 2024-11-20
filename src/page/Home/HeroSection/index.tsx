@@ -45,7 +45,7 @@ function HeroSection() {
                   src={EllipseBlue}
                   className="absolute top-0 right-0 left-0 -translate-x-20 translate-y-80" /> */}
               </div>
-                  <p>{JSON.stringify(import.meta.env)}</p>
+                  {/* <p>{JSON.stringify(import.meta.env)}</p> */}
             </div>
           </div>
         </div>
