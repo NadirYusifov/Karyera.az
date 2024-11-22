@@ -16,7 +16,7 @@ function Header() {
       <div className="header-section text-white font-jakarta sticky top-0 z-[99999] bg-very-dark-blue shadow-xl">
         <div className="container">
           <div className="row">
-            <div className="flex justify-between flex-wrap py-4">
+            <div className="flex justify-between items-center flex-wrap py-4">
               <div className="header-logo flex items-center text-[20px] font-bold z-[99999]">
                 {/* <img className="bg-transparent" src={BashlaAzImg}/> */}
                 <Link to='/'>
@@ -27,17 +27,17 @@ function Header() {
                 <Link to='/' className="px-2">Əsas səhifə</Link>
                 <Link to='/karyera' className="px-2">Karyera testi</Link>
                 <Link to='/ixtisaslar' className="px-2">İxtisaslar</Link>
-                <Link to='/mentorlar' className="px-2">Mentorlar</Link>
+                {/* <Link to='/mentorlar' className="px-2">Mentorlar</Link> */}
                 <Link to='/haqqımızda' className="px-2">Haqqımızda</Link>
               </nav>
               <div className="header-right flex items-center gap-3">
                 <div className="header-register hidden lg:flex">
-                  <Link to={"/giriş"}>
+                  {/* <Link to={"/giriş"}>
                     <button className="border border-solid text-white text-[16px] font-semibold leading-[20.16px] rounded-full mr-3 px-5 py-[10px]">Giriş</button>
                   </Link>
                   <Link to={"/qeydiyyat"}>
                     <button className="bg-white text-very-dark-blue text-[16px] font-semibold leading-[20.16px] rounded-full px-5 py-[10px]">Qeydiyyat</button>
-                  </Link>
+                  </Link> */}
                 </div>
                 <div className="menu-icon text-[20px] block lg:hidden">
                   <button onClick={() => setMenu(!Menu)}>{Menu ?
@@ -55,12 +55,12 @@ function Header() {
                         <Link to='/haqqımızda' className="px-2">Haqqımızda</Link>
                       </nav>
                       <div className="header-register flex items-center justify-center">
-                        <Link to={"/giriş"}>
+                        {/* <Link to={"/giriş"}>
                           <button className="border border-solid text-white text-[16px] font-semibold leading-[20.16px] rounded-full mr-3 px-5 py-[10px]">Giriş</button>
                         </Link>
                         <Link to={"/qeydiyyat"}>
                           <button className="bg-white text-very-dark-blue text-[16px] font-semibold leading-[20.16px] rounded-full px-5 py-[10px]">Qeydiyyat</button>
-                        </Link>
+                        </Link> */}
                       </div>
                       </div>
                       </div>

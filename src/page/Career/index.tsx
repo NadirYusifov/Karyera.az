@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './index.css';
 import AnswerImage from "/public/Answer.png";
@@ -156,29 +156,16 @@ const questions = [
   }
 ]
 
-// const motivationalQuotes = [
-//   {
-//     "id": 10,
-//     "title": "test 1"
-//   },
-//   {
-//     "id": 20,
-//     "title": "test 2"
-//   },
-//   {
-//     "id": 30,
-//     "title": "test 3"
-//   },
-
-// ]
-
-
 const Career = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]); // Cevapları tutan dizi
   const [quizEnded, setQuizEnded] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [result, setResult] = useState<string | null>(null); // Sonuç durumu
+  const [errorMessage, setErrorMessage] = useState<string | null>(null); // Hata mesajı durumu
 
+  // Soruyu geri almak
   const handleBackClick = () => {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
@@ -187,15 +174,12 @@ const Career = () => {
     }
   };
 
-  // const handleNextClick = () => {
-  //   if (currentQuestion > 0) {
-  //     setCurrentQuestion(currentQuestion + 1);
-  //     setSelectedOption(null);
-  //   }
-  // };
-
+  // Seçeneği tıklamak
   const handleOptionClick = (opt: string) => {
-    setSelectedOption(opt);
+    const newAnswers = [...selectedAnswers];
+    newAnswers[currentQuestion] = opt; // Cevabı kaydediyoruz
+    setSelectedAnswers(newAnswers);
+
     if (currentQuestion < questions.length - 1) {
       setTimeout(() => {
         setCurrentQuestion(currentQuestion + 1);
@@ -205,22 +189,67 @@ const Career = () => {
     } else {
       setQuizEnded(true);
       setProgress(100);
+      fetchCareerRecommendation(); // Test bittiğinde API'den sonuç almak için çağırıyoruz
     }
   };
 
-  // const motivationOptional = () => {
-  //   const quote = motivationalQuotes.find(q => q.id === Math.floor(currentQuestion + 1))
+  // ChatGPT API'sine istek göndermek
+  const fetchCareerRecommendation = async () => {
+    const apiKey = import.meta.env.VITE_PUBLIC_REACT_AI_API_KEY; // API anahtarını alıyoruz
+    const url = "https://api.openai.com/v1/chat/completions"; // API URL'si değişti
 
-  //   if (quote) {
-  //     return (
-  //       <div className="motivational-quote  my-5">
-  //         <p className="text-xl text-[#1D4F91]">{quote.title}</p>
-  //         <button onClick={handleNextClick}>A</button>
-  //       </div>
-  //     );
-  //   }
-  //   return null
-  // }
+    if (!apiKey) {
+      setErrorMessage("API anahtarı eksik veya geçersiz.");
+      return;
+    }
+
+    const headers = {
+      "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    };
+
+    const body = JSON.stringify({
+      model: "gpt-4", // Modeli GPT-4 olarak ayarlıyoruz
+      messages: [
+        {
+          role: "system",
+          content: "Sana sorulara verilen cevablara göre bir kariyer önerisi yapmanı isteyeceğim. Her soruya verilen cevaplar şu şekildedir."
+        },
+        ...selectedAnswers.map((answer, index) => ({
+          role: "user",
+          content: `Soru ${index + 1}: ${questions[index].question} - Cevap: ${answer}`
+        })),
+        {
+          role: "user",
+          content: "Bu cevaplara dayanarak kullanıcıya uygun bir kariyer önerisi yap."
+        }
+      ],
+      max_tokens: 100,
+    });
+
+    try {
+      const apiResponse = await fetch(url, { method: "POST", headers, body });
+
+      if (!apiResponse.ok) {
+        const errorText = await apiResponse.text(); // Detaylı hata mesajını alıyoruz
+        throw new Error(`API Error: ${apiResponse.statusText} - ${errorText}`);
+      }
+
+      const data = await apiResponse.json(); // Gelen yanıtı JSON formatında alıyoruz
+
+      if (data.choices && data.choices.length > 0) {
+        setResult(data.choices[0].message.content.trim()); // API yanıtını result state'ine kaydediyoruz
+        setErrorMessage(null); // Hata mesajını sıfırlıyoruz
+      } else {
+        setResult("API'den geçerli bir yanıt alınamadı.");
+        setErrorMessage(null);
+      }
+    } catch (error: any) {
+      console.error("API çağrısında hata:", error);
+      setResult(null);
+      setErrorMessage(`Bir hata oluştu: ${error.message}`); // Hata mesajını daha ayrıntılı alıyoruz
+    }
+  };
 
   return (
     <div className="container_career block lg:flex w-full mb-[130px]">
@@ -229,54 +258,23 @@ const Career = () => {
       </div>
       <div className="right-section w-full h-screen px-0 lg:px-10 flex flex-col flex-wrap justify-center bg-white">
         <div className="container">
-
           {quizEnded ? (
             <div className="end-message">
               <h2 className="endm text-very-dark-blue text-[84px] text-center font-semibold">Təbriklər!</h2>
-              <p className="endp text-center text-[#2F78AA] text-[32px] leading-[60px]"> İndi sizə ən uyğun karyera sahələrini təqdim edirik!</p>
+              <p className="endp text-center text-[#2F78AA] text-[32px] leading-[60px]">
+                İndi sizə ən uyğun karyera sahələrini təqdim edirik!
+              </p>
               <div className="flex justify-center lg:justify-end">
-                <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-10">Nəticə</button>
+                <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-10">
+                  {result ? result : errorMessage ? errorMessage : "Sonuç yükleniyor..."} {/* Burada AI'den gelen sonucu veya hata mesajını gösteriyoruz */}
+                </button>
               </div>
             </div>
           ) : (
             <div className="h-full block lg:flex flex-col justify-center">
-              {/* {motivationOptional()} */}
-              {/* <div className="progress-bar w-full h-5 bg-[#E0E0E0] rounded-full mb-5">
-                <div
-                  className="progress-bar-fill h-full bg-[#1D4F91] rounded-full transition all ease-in-out"
-                  style={{ width: `${progress}%` }}
-                  ></div>
-                  {motivationOptional()}
-              </div>
-              <div className="question-header">
-                <h2 className="text-[23px]">{`${currentQuestion + 1}/${questions.length}`}</h2>
-                <p className="text-[23px] lg:text-[32px] my-5 font-medium">{questions[currentQuestion].question}</p>
-              </div>
-
-              
-
-
-              <div className="options flex flex-col">
-                {questions[currentQuestion].options.map((option, index) => (
-                  <label key={index} className={`option ${selectedOption === option ? "selected" : ""} flex items-center w-full h-full rounded-full border-solid border border-very-dark-blue pl-[35px] py-3 mb-[10px] text-[18px] lg:[20px] cursor-pointer bg-white text-[#242424] text-left hover:bg-very-dark-blue hover:text-white`}>
-                    <input
-                      type="radio"
-                      name="options"
-                      value={option}
-                      checked={selectedOption === option}
-                      onChange={() => handleOptionClick(option)}
-                      style={{ display: "none" }}
-                    />
-                    {option}
-                  </label>
-                ))}
-              </div> */}
-
-              {/* {motivationalQuotes && currentQuestion && ( */}
-              {/* Progress bar */}
               <div className="progress-bar w-full h-5 bg-[#E0E0E0] rounded-full mb-5">
                 <div
-                  className="progress-bar-fill h-full bg-[#1D4F91] rounded-full transition all ease-in-out"
+                  className="progress-bar-fill w-full h-full bg-[#1D4F91] rounded-full transition-all ease-in-out"
                   style={{ width: `${progress}%` }}
                 ></div>
               </div>
@@ -294,7 +292,7 @@ const Career = () => {
                 {questions[currentQuestion].options.map((option, optionIndex) => (
                   <label
                     key={optionIndex}
-                    className={`option ${selectedOption === option ? "selected" : ""} flex items-center w-full h-full rounded-full border-solid border border-very-dark-blue pl-[35px] py-3 mb-[10px] text-[18px] lg:[20px] cursor-pointer bg-white text-[#242424] text-left hover:bg-very-dark-blue hover:text-white`}
+                    className={`flex items-center w-full h-full rounded-full border-solid border border-very-dark-blue pl-[35px] py-3 mb-[10px] text-[18px] lg:text-[20px] cursor-pointer bg-white text-[#242424] text-left hover:bg-very-dark-blue hover:text-white ${selectedOption === option ? "selected" : ""}`}
                   >
                     <input
                       type="radio"
@@ -309,12 +307,9 @@ const Career = () => {
                 ))}
               </div>
 
-
               <div className="navigation flex justify-end mt-[10px] mb-0 ">
                 {currentQuestion === 0 ? (
-                  <Link to='/'>
-                    <h4>Ana səhifə</h4>
-                  </Link>
+                  <Link to='/'><h4>Ana səhifə</h4></Link>
                 ) : (
                   <button className="back-btn text-" onClick={handleBackClick}>
                     Geri
@@ -322,7 +317,6 @@ const Career = () => {
                 )}
               </div>
             </div>
-
           )}
         </div>
       </div>

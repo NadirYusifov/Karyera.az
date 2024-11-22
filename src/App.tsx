@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react"
 import LoadingSpinner from "./Components/Loading"
 import Footer from "./layout/Footer"
-import ContactMe from "./layout/Contactme"
+// import ContactMe from "./layout/Contactme"
 import Header from "./layout/Header"
 import Home from "./page/Home"
 import Mentor from "./page/Mentor"
 import { Route, Routes } from "react-router-dom"
-import Login from "./page/Login"
+// import Login from "./page/Login"
 import Career from "./page/Career"
 import About from "./page/About"
-import SignUp from "./page/SignUp"
+// import SignUp from "./page/SignUp"
 import ScrollTopPage from "./lib/scrolltopage/ScrollTopPage"
 import QualificationsPage from "./page/Qualifications"
 // import axios from "axios"
@@ -57,8 +57,8 @@ function App() {
           <ScrollTopPage />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/giriş" element={<Login />} />
-            <Route path="/qeydiyyat" element={<SignUp />} />
+            {/* <Route path="/giriş" element={<Login />} /> */}
+            {/* <Route path="/qeydiyyat" element={<SignUp />} /> */}
             <Route path="/karyera" element={<Career />} />
             <Route path="/mentorlar" element={<Mentor />} />
             <Route path="/mentor/:id" element={<MentorDetail />} />
@@ -67,7 +67,7 @@ function App() {
             <Route path="/haqqımızda" element={<About />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
-          <ContactMe />
+          {/* <ContactMe /> */}
           <Footer />
           {/* {!isLoginPageShow && !isCareerPageShow && <ContactMe />}
           {!isLoginPageShow && !isCareerPageShow && <Footer />} */}
