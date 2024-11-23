@@ -189,9 +189,9 @@ const Career = () => {
     }
   }
 
-interface ChatBotStyle  {
- sender: "bot"
-}
+// interface ChatBotStyle  {
+//  sender: "bot"
+// }
 
   // Seçeneği tıklamak
   const handleOptionClick = (opt: string) => {

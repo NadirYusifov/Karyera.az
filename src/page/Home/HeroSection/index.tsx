@@ -1,4 +1,4 @@
-import Search from "../../../Components/Search"
+import Search from "../../../components/Search"
 import HeroImg from "/public/HeroImg.png"
 import VectorHeroImg from "/public/Vector.svg"
 import ThreeLine from "/public/GroupLine.svg"
