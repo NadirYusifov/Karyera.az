@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import LoadingSpinner from "./Components/Loading"
+import LoadingSpinner from "./components/Loading/LoadingStartPage"
 import Footer from "./layout/Footer"
 // import ContactMe from "./layout/Contactme"
 import Header from "./layout/Header"

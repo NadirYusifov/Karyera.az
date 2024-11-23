@@ -3,7 +3,6 @@ import { HashLoader } from "react-spinners"
 
 const override: CSSProperties = {
     display: "block",
-
 }
 
 function LoadingSpinner() {
