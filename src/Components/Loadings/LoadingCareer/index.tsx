@@ -5,7 +5,7 @@ const override: CSSProperties = {
     display: "block",
 }
 
-function LoadingCareerSpinner() {
+function LoadingCareer() {
 
   return (
     <>
@@ -20,4 +20,4 @@ function LoadingCareerSpinner() {
   )
 }
 
-export default LoadingCareerSpinner
+export default LoadingCareer

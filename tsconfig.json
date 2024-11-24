@@ -1,13 +1,4 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./", // Proje kök dizinini belirler
-    "paths": {
-      "@components/*": [
-        "src/components/*"
-      ] // Özel yollar kullanıyorsanız, burada belirtebilirsiniz.
-    },
-    "moduleResolution": "node" // Node modül çözümleme stratejisini kullanır
-  },
   "files": [],
   "references": [
     {

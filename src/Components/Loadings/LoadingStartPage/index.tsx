@@ -5,7 +5,7 @@ const override: CSSProperties = {
     display: "block",
 }
 
-function LoadingSpinner() {
+function LoadingStartPage() {
 
   return (
     <>
@@ -20,4 +20,4 @@ function LoadingSpinner() {
   )
 }
 
-export default LoadingSpinner
+export default LoadingStartPage

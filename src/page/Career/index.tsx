@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnswerImage from "/public/Answer.png";
 import CareerResultImg from "/public/CareerResult.png";
-import LoadingCareerSpinner from "../../components/Loadings/LoadingCareer";
+import LoadingCareer from "../../components/Loadings/LoadingCareer"
 
 
 
@@ -303,7 +303,7 @@ const Career = () => {
                   </div> :
                   loading &&
                   <div className="text-[20px] space-y-3">
-                    <LoadingCareerSpinner />
+                    <LoadingCareer />
                     <p>Nəticə Yüklənir...</p>
                   </div>
                 }
