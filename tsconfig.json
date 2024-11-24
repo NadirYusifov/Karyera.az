@@ -1,7 +1,20 @@
 {
+  "compilerOptions": {
+    "baseUrl": "./", // Proje kök dizinini belirler
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ] // Özel yollar kullanıyorsanız, burada belirtebilirsiniz.
+    },
+    "moduleResolution": "node" // Node modül çözümleme stratejisini kullanır
+  },
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
   ]
 }
