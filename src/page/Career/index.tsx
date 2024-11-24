@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnswerImage from "/public/Answer.png";
 import CareerResultImg from "/public/CareerResult.png";
-import LoadingCareer from "../../components/Loadings/LoadingCareer"
+import LoadingCareer from "../../components/Loading/LoadingCareer"
 
 
 
