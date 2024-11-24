@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AnswerImage from "/public/Answer.png";
 import CareerResultImg from "/public/CareerResult.png";
 import LoadingCareer from "../../../src/components/Loading/LoadingCareer"
+import axios from "axios";
 
 
 
@@ -162,16 +163,13 @@ const questions = [
 const Career = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]); // Cevapları tutan dizi
+  const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]); 
   const [quizEnded, setQuizEnded] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [result, setResult] = useState<string | null>(null); // Sonuç durumu
+  const [result, setResult] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [loading, setLoading] = useState<boolean>(true) // Hata mesajı durumu
+  const [loading, setLoading] = useState<boolean>(false); 
 
-  useEffect(() => {
-    setLoading(true)
-  })
   // Soruyu geri almak
   const handleBackClick = () => {
     if (currentQuestion > 0) {
@@ -180,18 +178,6 @@ const Career = () => {
       setProgress(prevProgress => prevProgress - 100 / questions.length);
     }
   };
-
-  const handleChange = () => {
-    if (result) {
-      result
-    } else {
-      errorMessage
-    }
-  }
-
-// interface ChatBotStyle  {
-//  sender: "bot"
-// }
 
   // Seçeneği tıklamak
   const handleOptionClick = (opt: string) => {
@@ -216,7 +202,6 @@ const Career = () => {
   const fetchCareerRecommendation = async () => {
     const apiKey = import.meta.env.VITE_PUBLIC_REACT_AI_API_KEY; // API anahtarını alıyoruz
     const url = "https://api.openai.com/v1/chat/completions"; // API URL'si değişti
-
 
     if (!apiKey) {
       setErrorMessage("API anahtarı eksik veya geçersiz.");
@@ -248,29 +233,31 @@ const Career = () => {
     });
 
     try {
-      const apiResponse = await fetch(url, { method: "POST", headers, body });
+      setLoading(true); // Yükleniyor durumu
+      const apiResponse = await axios.post(url, body, { headers }); // axios ile API isteği gönderiyoruz
 
-      if (!apiResponse.ok) {
-        const errorText = await apiResponse.text(); // Detaylı hata mesajını alıyoruz
-        throw new Error(`API Error: ${apiResponse.statusText} - ${errorText}`);
-      }
-
-
-      const data = await apiResponse.json(); // Gelen yanıtı JSON formatında alıyoruz
-
-      if (data.choices && data.choices.length > 0) {
-        setResult(data.choices[0].message.content.trim()); // API yanıtını result state'ine kaydediyoruz
+      if (apiResponse.status === 200 && apiResponse.data.choices && apiResponse.data.choices.length > 0) {
+        setResult(apiResponse.data.choices[0].message.content.trim()); // API yanıtını result state'ine kaydediyoruz
         setErrorMessage(null); // Hata mesajını sıfırlıyoruz
       } else {
         setResult("API'den geçerli bir yanıt alınamadı.");
-        setErrorMessage(null) // Hata mesajını sıfırlıyoruz
+        setErrorMessage(null); // Hata mesajını sıfırlıyoruz
       }
     } catch (error: any) {
       console.error("API çağrısında hata:", error);
       setResult(null);
       setErrorMessage(`Bir hata oluştu: ${error.message}`); // Hata mesajını daha ayrıntılı alıyoruz
+    } finally {
+      setLoading(false); // Yükleniyor durumunu sonlandırıyoruz
     }
   };
+
+  useEffect(() => {
+    // Eğer quiz bitmişse, hemen sonucu almak için fetchCareerRecommendation çalıştırılabilir
+    if (quizEnded) {
+      fetchCareerRecommendation();
+    }
+  }, [quizEnded]);
 
   return (
     <div className="container_career block lg:flex w-full mb-[130px]">
@@ -281,32 +268,27 @@ const Career = () => {
         <div className="container">
           {quizEnded ? (
             <div className="end-message">
-              <div className="flex justify-center" onChange={handleChange}>
-
-                {/* <button className="endb bg-very-dark-blue rounded-full py-[10px] px-10 text-white mt-10">
-              <h2 className="endm text-very-dark-blue text-[84px] text-center font-semibold">Təbriklər!</h2>
-              <p className="endp text-center text-[#2F78AA] text-[32px] leading-[60px]">
-                İndi sizə ən uyğun karyera sahələrini təqdim edirik!
-              </p>
-                </button> */}
-                {result ?
+              <div className="flex justify-center">
+                {result ? (
                   <div className="block">
                     <div>
-                    <h2 className="endm text-very-dark-blue text-[50px] lg:text-[74px] text-center font-semibold">Təbriklər!</h2>
-                    <p className="endp text-center text-[#2F78AA] text-[25px] lg:text-[32px] leading-[35px] mb-6">
-                      İndi sizə ən uyğun karyera sahələrini təqdim edirik!
-                    </p>
+                      <h2 className="endm text-very-dark-blue text-[50px] lg:text-[74px] text-center font-semibold">Təbriklər!</h2>
+                      <p className="endp text-center text-[#2F78AA] text-[25px] lg:text-[32px] leading-[35px] mb-6">
+                        İndi sizə ən uyğun karyera sahələrini təqdim edirik!
+                      </p>
                     </div>
                     <div>
-                    <p className="text-[18px] lg:text-[20px] leading-[30px] text-justify">{result}</p>
+                      <p className="text-[18px] lg:text-[20px] leading-[30px] text-justify">{result}</p>
                     </div>
-                  </div> :
-                  loading &&
-                  <div className="text-[20px] space-y-3">
-                    <LoadingCareer />
-                    <p>Nəticə Yüklənir...</p>
                   </div>
-                }
+                ) : (
+                  loading && (
+                    <div className="text-[20px] space-y-3">
+                      <LoadingCareer />
+                      <p>{errorMessage && "Nəticə yüklənir..."}</p>
+                    </div>
+                  )
+                )}
               </div>
             </div>
           ) : (
