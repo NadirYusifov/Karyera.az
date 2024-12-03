@@ -59,6 +59,15 @@ function NotFound() {
   //   fetchChatGPTResponse(); // API çağrısını başlatıyoruz
   // }, []);
 
+const key1 = "sk-5eCEcDLJNQhexK2X3VRg9bnKn6ZFw_gORni2esU1WdT3BlbkFJhQxL8kFPYsq5SvdoMI5m-K-cwdFmCssbuIQueYUhoA";
+const key2 = "sk-5eCEcDLJNQhexK2X3VRg9bnKn6ZFw_gORni2esU1WdT3BlbkFJhQxL8kFPYsq5SvdoMI5m-K-cwdFmCssbuIQueYUhoA";
+
+if (key1 === key2) {
+    console.log("Anahtarlar aynıdır.");
+} else {
+    console.log("Anahtarlar farklıdır.");
+}
+
   return (
     <>
 <section className="not-found-section">

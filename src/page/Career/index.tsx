@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AnswerImage from "/public/Answer.png";
 import CareerResultImg from "/public/CareerResult.png";
 import LoadingCareer from "../../../src/components/Loading/LoadingCareer"
-import axios from "axios";
+// import axios from "axios";
 
 
 
@@ -179,6 +179,20 @@ const Career = () => {
     }
   };
 
+  useEffect(() => {
+    setLoading(true)
+  })
+
+  const handleChange = () => {
+    if (result) {
+      result
+    } else {
+      errorMessage
+    }
+  }
+// interface ChatBotStyle  {
+//  sender: "bot"
+// }
   // Seçeneği tıklamak
   const handleOptionClick = (opt: string) => {
     const newAnswers = [...selectedAnswers];
@@ -214,7 +228,7 @@ const Career = () => {
     };
 
     const body = JSON.stringify({
-      model: "gpt-4", // Modeli GPT-4 olarak ayarlıyoruz
+      model: "gpt-4", // GPT-4 modelini kullanıyoruz
       messages: [
         {
           role: "system",
@@ -233,31 +247,36 @@ const Career = () => {
     });
 
     try {
-      setLoading(true); // Yükleniyor durumu
-      const apiResponse = await axios.post(url, body, { headers }); // axios ile API isteği gönderiyoruz
+      const apiResponse = await fetch(url, { method: "POST", headers, body });
+      if (!apiResponse.ok) {
+        const errorText = await apiResponse.text();
+        throw new Error(`API Error: ${apiResponse.statusText} - ${errorText}`);
+      }
 
-      if (apiResponse.status === 200 && apiResponse.data.choices && apiResponse.data.choices.length > 0) {
-        setResult(apiResponse.data.choices[0].message.content.trim()); // API yanıtını result state'ine kaydediyoruz
-        setErrorMessage(null); // Hata mesajını sıfırlıyoruz
+      const data = await apiResponse.json();
+      if (data.choices && data.choices.length > 0) {
+        setResult(data.choices[0].message.content.trim()); // Sonucu kaydet
+        setErrorMessage(null); // Hata mesajını sıfırla
       } else {
         setResult("API'den geçerli bir yanıt alınamadı.");
-        setErrorMessage(null); // Hata mesajını sıfırlıyoruz
+        setErrorMessage(null);
       }
     } catch (error: any) {
       console.error("API çağrısında hata:", error);
       setResult(null);
-      setErrorMessage(`Bir hata oluştu: ${error.message}`); // Hata mesajını daha ayrıntılı alıyoruz
-    } finally {
-      setLoading(false); // Yükleniyor durumunu sonlandırıyoruz
+      setErrorMessage(`Bir hata oluştu: ${error.message}`);
     }
   };
+    
 
-  useEffect(() => {
-    // Eğer quiz bitmişse, hemen sonucu almak için fetchCareerRecommendation çalıştırılabilir
-    if (quizEnded) {
-      fetchCareerRecommendation();
-    }
-  }, [quizEnded]);
+
+
+  // useEffect(() => {
+  //   // Eğer quiz bitmişse, hemen sonucu almak için fetchCareerRecommendation çalıştırılabilir
+  //   if (quizEnded) {
+  //     fetchCareerRecommendation();
+  //   }
+  // }, [quizEnded]);
 
   return (
     <div className="container_career block lg:flex w-full mb-[130px]">
@@ -268,7 +287,7 @@ const Career = () => {
         <div className="container">
           {quizEnded ? (
             <div className="end-message">
-              <div className="flex justify-center">
+              <div className="flex justify-center" onChange={handleChange}>
                 {result ? (
                   <div className="block">
                     <div>
@@ -285,7 +304,7 @@ const Career = () => {
                   loading && (
                     <div className="text-[20px] space-y-3">
                       <LoadingCareer />
-                      <p>{errorMessage && "Nəticə yüklənir..."}</p>
+                      <p>Nəticə Yüklənir...</p>
                     </div>
                   )
                 )}
